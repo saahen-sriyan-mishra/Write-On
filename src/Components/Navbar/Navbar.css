@@ -6,7 +6,10 @@
     background: #fff;
     padding: 15px 7%;
     transition: 0.5s;
-    position: relative; /* Added to position the services box relative to the navbar */
+    position: sticky; /* Change from relative to sticky */
+    top: 0; /* Stick to the top when scrolling */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
       
   }
   
@@ -82,3 +85,52 @@
     background-color: #555;
   }
   
+
+
+
+  /* Navbar.css */
+
+/* Reset the link styles */
+.Navbar ul li a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color */
+}
+
+.Navbar ul li {
+  cursor: pointer;
+  /* You can add more styling here if needed */
+}
+
+/* Optional: If you want to remove hover effects completely */
+.Navbar ul li:hover,
+.Navbar ul li a:hover {
+  text-decoration: none; /* Ensure no underline appears on hover */
+  color: inherit; /* Keep the same color on hover */
+}
+
+
+/* Navbar.css */
+
+/* Active link styling */
+.Navbar ul li.active a {
+  text-decoration: underline;
+}
+
+/* Reset the link styles */
+.Navbar ul li a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color */
+}
+
+.Navbar ul li.active {
+  text-decoration: underline;
+}
+
+.services-grid .service-item.active {
+  text-decoration: underline;
+}
+
+/* Reset the link styles */
+.Navbar ul li a, .services-grid .service-item {
+  text-decoration: none; /* Remove underline */
+}
