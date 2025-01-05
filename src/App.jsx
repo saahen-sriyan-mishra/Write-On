@@ -25,7 +25,8 @@ const App = () => {
       <div className={`container ${theme}`}>
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home theme={theme} setTheme={setTheme} />} />
+        
           <Route path="/sample" element={<Sample />} />
           <Route path="/service1" element={<Service1 />} />
           <Route path="/service2" element={<Service2 />} />

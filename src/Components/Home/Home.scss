@@ -1,11 +1,85 @@
-.Text {
-    position: absolute;
-    top: 300px;
-    width: 100%;
+.HomePage { 
+  .ContactSection { 
+    padding: 0px; 
     text-align: center;
+
+    .Text {  
+      margin-top: 40px; 
+      width: 100%; 
+      text-align: center; 
+      z-index: 1; 
+
+      h1 { 
+        font-size: 3rem; 
+      } 
+    } 
+
+    .ContactButton { 
+      background-color: #cb00c1; /* Adjust button color as needed */ 
+      color: white; 
+      border: none; 
+      padding: 10px 20px; 
+      text-transform: uppercase; 
+      cursor: pointer; 
+      border-radius: 5px; 
+      margin: 40px 0 20px; 
+    } 
+  } 
+}
+
+
+///////////////////////
+//////////////////////
+/// Companies
+/// ////////////for anyone or me (Saahen S. Mishra) in future
+/// trying to edit this section
+/// DON'T
+/// atleast keep a copy of code
+/// keep image same resolution
+/// and then add/ edit the image
+/// Do resolution/code changes only iif you understand math
+/////////////////////////////////////////////////
+
+.CompaniesHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: -60px;
+}
+
+
+.tech-slideshow {
+  height: 142px; // 288 /2 = 142
+  max-width: 800px;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 284px;
+  width: 2526px;
+  background: url(https://i.postimg.cc/sgMQM35z/comp.jpg);
   
-    h1 {
-      font-size: 3rem;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+ 
+  animation: moveSlideshow 12s linear infinite;
+}
+
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-50.666666%);  
   }
-  
+}
