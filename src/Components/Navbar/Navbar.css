@@ -6,7 +6,7 @@
     background: #fff;
     padding: 15px 7%;
     transition: 0.5s;
-    position: sticky; /* Change from relative to sticky */
+    position: fixed; /* Change from relative to sticky */
     top: 0; /* Stick to the top when scrolling */
     z-index: 1000; /* Ensure it stays above other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
