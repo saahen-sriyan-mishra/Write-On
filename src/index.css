@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins;
+  font-family: sans-serif;
   
 
 }
@@ -16,7 +16,7 @@
 }
 
 .container.dark {
-  background: #202020;
+  background: #212121;
   color: #fff;
 }
 

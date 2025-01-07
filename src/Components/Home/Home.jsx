@@ -71,7 +71,7 @@ const Home = ({ theme, setTheme }) => {
     <div className={`HomePage ${theme}`}>
       <div className='ContactSection'>
         <div className='Text'>
-          <h1 style={{fontSize: '70px',marginBottom:'10px' }}>Maximize your outbound revenue</h1>
+          <h1 style={{fontSize: '70px',marginBottom:'10px',fontFamily:'poppins' }}>Maximize your outbound revenue</h1>
           <p>    <br />  We specialize in providing high-quality content written by professional writers to boost your SEO rankings, get customers, and drive up your inbound sales.</p>
           
           <button className='ContactButton' onClick={() => window.open('https://forms.gle/yourGoogleFormID', '_blank')}>
@@ -87,7 +87,7 @@ const Home = ({ theme, setTheme }) => {
           <img src={theme === 'light' ? CompLogoL : CompLogoD} alt='Background' className='CompaniesSlider' />
         </div>*/}
        <div className="WhatsIncludedHeading" style={{ fontSize: '30px', marginTop: '60px', marginBottom: '-50px', textAlign:'center' }}>
-      <h3>Trusted by Brands</h3>
+      <h3 style={{fontFamily:'poppins'}}>Trusted by Brands</h3>
     </div>
  {/*       <div className='tech-slideshow'>
           <div className='mover-1'></div>
@@ -130,20 +130,20 @@ const Home = ({ theme, setTheme }) => {
   {/*<div className="WIHeading" style={{ marginTop: '0px', marginBottom: '0px' }}>
     <img src={theme === 'light' ? WhatsIncludedL : WhatsIncludedD} alt='Background' className='WhatsIncluded' />
   </div>*/}
-  <div className="WhatsIncludedHeading" style={{ fontSize: '30px', marginTop: '-40px', marginBottom: '30px', textAlign:'center' }}>
-      <h3>What's Included?</h3>
+  <div className="WhatsIncludedHeading" style={{ fontSize: '30px', marginTop: '-20px', marginBottom: '30px', textAlign:'center' }}>
+      <h3 style={{fontFamily:'poppins'}}>What's Included?</h3>
     </div>
   <div className="WICards">
     <div className="Card">
-      <h2>SEO-Optimization</h2>
+      <h2 style={{fontFamily:'poppins'}}>SEO-Optimization</h2>
       <p style = {{marginTop: '10px'}}>Content paragraph 1</p>
     </div>
     <div className="Card">
-      <h2>Plagiarism-free</h2>
+      <h2 style={{fontFamily:'poppins'}}>Plagiarism-free</h2>
       <p style = {{marginTop: '10px'}}>Content paragraph 2</p>
     </div>
     <div className="Card">
-      <h2>Up to 2 revisions</h2>
+      <h2 style={{fontFamily:'poppins'}}>Up to 2 revisions</h2>
       <p style = {{marginTop: '10px'}}>Content paragraph 3</p>
     </div>
   </div>
@@ -160,7 +160,7 @@ const Home = ({ theme, setTheme }) => {
   </div>*/}
 
   <div className="OfferHeading" style={{ fontSize: '30px', marginTop: '50px', marginBottom: '-20px', textAlign:'center' }}>
-      <h3>What do we offer?</h3>
+      <h3 style={{fontFamily:'poppins'}}>What do we offer?</h3>
     </div>
 
     <img src={OfferMiddle3DImage} alt="OfferMiddle3DImage" className="OfferMiddle3DImage" />
@@ -198,7 +198,7 @@ const Home = ({ theme, setTheme }) => {
 
 <div className="Why-select-us">
     <div className="Why-us" style={{ fontSize: '30px', marginTop: '30px', marginBottom: '20px', textAlign:'center' }}>
-      <h3>Why should you choose us?</h3>
+      <h3 style={{fontFamily:'poppins'}}>Why should you choose us?</h3>
     </div>
     <div className="Reasons">
     <ul>
@@ -275,19 +275,14 @@ const Home = ({ theme, setTheme }) => {
         step="50"
         value={wordCount}
         onChange={(e) => setWordCount(parseInt(e.target.value))}
-        style={{
-          background: theme === 'light'
-            ? `linear-gradient(to right, #000000 ${
-                ((wordCount - 350) / (10000 - 350)) * 100
-              }%,rgb(255, 255, 255) ${
-                ((wordCount - 350) / (10000 - 350)) * 100
-              }%)`
-            : `linear-gradient(to right,  #cfcfcf ${
-                ((wordCount - 350) / (10000 - 350)) * 100
-              }%, #000000 ${
-                ((wordCount - 350) / (10000 - 350)) * 100
-              }%)`,
-        }}
+        style={{ background: theme === 'light' ?
+           `linear-gradient(to right, #000000 
+          ${ ((wordCount - 350) / (10000 - 350)) * 100 }%, rgb(255, 255, 255) 
+          ${ ((wordCount - 350) / (10000 - 350)) * 100 }%)` : 
+          `linear-gradient(to right, #cfcfcf 
+          ${ ((wordCount - 350) / (10000 - 350)) * 100 }%, #000000 
+          ${ ((wordCount - 350) / (10000 - 350)) * 100 }%)`, 
+          border: theme === 'light' ? '2px solid black' : '2px solid white' }}
       />
     </div>
 
@@ -363,45 +358,44 @@ const Home = ({ theme, setTheme }) => {
 
 
 <div className="Why-us" style={{ fontSize: '30px', marginTop: '60px', marginBottom: '30px', textAlign:'center' }}>
-      <h3>What do our clients say about us?</h3>
+      <h3 style={{fontFamily:'poppins'}}>What do our clients say about us?</h3>
     </div>
 
 
-<div className="carousel">
+<div className="carouself">
         <div className="groupf">
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
-          <br/><p>- CEO</p></div>
+          <br/><p style={{textAlign:'right'}}>- CEO</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
-          <br/><p>- Content Promotion Head</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
-          <br/><p>- Head of Marketing</p></div>
+          <br/><p style={{textAlign:'right'}}>- Content Promotion Head</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"Outstanding Quality and Reliable Service. WriteOn has been great for our blogs. They suggest topics that fit our audience and write in a way that makes our posts interesting and shareable. They are always on time and easy to work with. "</p>
+          <br/><p style={{textAlign:'right'}}>- SEO Head</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
-          <br/><p>- Head of Marketing</p></div>
+          <br/><p style={{textAlign:'right'}}>- Head of Marketing</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
-          <br/><p>- Digital Marketing Manager</p></div>
+          <br/><p style={{textAlign:'right'}}>- Digital Marketing Manager</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
-          <br/><p>- Social Media Manager</p></div>
+          <br/><p style={{textAlign:'right'}}>- Social Media Manager</p></div>
         </div>
         <div aria-hidden className="groupf">
         <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
-        <br/><p>- CEO</p></div>
+        <br/><p style={{textAlign:'right'}}>- CEO</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
-          <br/><p>- Content Promotion Head</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
-          <br/><p>- Head of Marketing</p></div>
+          <br/><p style={{textAlign:'right'}}>- Content Promotion Head</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"Outstanding Quality and Reliable Service. WriteOn has been great for our blogs. They suggest topics that fit our audience and write in a way that makes our posts interesting and shareable. They are always on time and easy to work with. "</p>
+          <br/><p style={{textAlign:'right'}}>- SEO Head</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
-          <br/><p>- Head of Marketing</p></div>
+          <br/><p style={{textAlign:'right'}}>- Head of Marketing</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
-          <br/><p>- Digital Marketing Manager</p></div>
+          <br/><p style={{textAlign:'right'}}>- Digital Marketing Manager</p></div>
           <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
-          <br/><p>- Social Media Manager</p></div>
-        </div>
+          <br/><p style={{textAlign:'right'}}>- Social Media Manager</p></div>
+        </div>        
       </div>
-
 
 <section className="faqs-section">
   <div className="faqs-title" style={{ fontSize: '30px', margin: '-30px 0 30px' }}>
-    <h3>FAQ’s</h3>
+    <h3 style={{fontFamily:'poppins'}}>FAQ’s</h3>
   </div>
   <div className='All-FAQ-Content'>
   <img src={FAQImage} alt="FAQImage" className="FAQImage" />
@@ -449,7 +443,7 @@ const Home = ({ theme, setTheme }) => {
 
 <footer className="vep-footer">
   <div className="vep-footer-left">
-    <p className="vep-tagline">"Write your story,<br/> leave your mark!"</p>
+    <p className="vep-tagline" style={{fontFamily:'poppins'}}>"Write your story,<br/> leave your mark!"</p>
     <p style={{ fontSize:'10px'}}>&copy; 2024 WriteOn. All rights reserved.</p>
   </div>
   <div className="vep-footer-center">
@@ -467,7 +461,7 @@ const Home = ({ theme, setTheme }) => {
   </div>
   <div className="vep-footer-right">
     <p>
-      <strong>Contacts</strong>
+      <strong style={{fontFamily:'poppins'}}>Contacts</strong>
       <a href="mailto:sairaj@writeon.in" className="vep-footer-link">
         sairaj@writeon.in
       </a>

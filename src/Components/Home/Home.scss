@@ -682,16 +682,28 @@
 
 */
 
+
+.carouself {
+  margin: 0 auto;
+  padding: 20px 0;
+  min-width: 300px;
+  overflow: hidden;
+  display: flex;
+}
+
+.carouself > * {
+  flex: 0 0 100%;
+}
 .groupf {
   margin: 0px 0 50px;
   display: flex;
   gap: 20px;
   padding-right: 20px;
-  will-change: transform; /* Helps browser with animations */
-  animation: scrolling 25s linear infinite;
+  will-change: transform;
+  animation: scrolling 35s linear infinite;
 }
 
-.carousel:hover .groupf {
+.carouself:hover .groupf {
   animation-play-state: paused;
 }
 
@@ -702,12 +714,12 @@
   box-shadow: rgba(0, 0, 0, 1) 5px 5px 20px 1px;
   margin: 0 2.5px;
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: 1.06rem;
   line-height: 1.5rem;
   justify-content: center;
   align-items: center;
   height: 450px;
-  overflow: hidden; /* Ensure the images fit within the card */
+  overflow: hidden; 
 }
 
 .cardf img {
@@ -775,7 +787,7 @@
       display: inline-block;
       width: 100%;
       padding: 15px;
-      font-size: 1rem;
+      font-size: 1.07rem;
       background-color: #000000;
       color: white;
       text-align: left;
@@ -785,9 +797,9 @@
       transition: background-color 0.3s;
       border: 3px solid #000000;
 
+
       &:hover {
-        background-color: #6ffdff;
-        color: #000000
+        transform: scale(1.015);
       }
     }
 
@@ -795,9 +807,9 @@
       max-height: 0;
       overflow: hidden;
       padding: 0;
-      background-color: #85858666;
+      background-color: #71f3ff;
       border: 2px solid #000000;
-      
+      color: #000000;
       font-size: 1rem;
       border-radius: 5px;
       margin: 5px 0;
