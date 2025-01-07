@@ -394,7 +394,7 @@ const Home = ({ theme, setTheme }) => {
       </div>
 
 <section className="faqs-section">
-  <div className="faqs-title" style={{ fontSize: '30px', margin: '-30px 0 30px' }}>
+  <div className="faqs-title" style={{ fontSize: '30px', margin: '20px 0 30px' }}>
     <h3 style={{fontFamily:'poppins'}}>FAQ’s</h3>
   </div>
   <div className='All-FAQ-Content'>
