@@ -61,14 +61,15 @@ const Navbar = ({ theme, setTheme }) => {
       {isServicesVisible && (
         <div className={`services-box ${theme === 'light' ? 'light' : 'dark'}`}>
           <div className="services-grid">
-            <Link to="/service1" className="service-item">Service 1</Link>
-            <Link to="/service2" className="service-item">Service 2</Link>
-            <Link to="/service3" className="service-item">Service 3</Link>
-            <Link to="/service4" className="service-item">Service 4</Link>
-            <Link to="/service5" className="service-item">Service 5</Link>
-            <Link to="/service6" className="service-item">Service 6</Link>
-            <Link to="/service7" className="service-item">Service 7</Link>
-            <Link to="/service8" className="service-item">Service 8</Link>
+          <Link to="/service1" className={`service-item ${theme}`}>Service 1</Link>
+          <Link to="/service2" className={`service-item ${theme}`}>Service 2</Link>
+          <Link to="/service3" className={`service-item ${theme}`}>Service 3</Link>
+          <Link to="/service4" className={`service-item ${theme}`}>Service 4</Link>
+          <Link to="/service5" className={`service-item ${theme}`}>Service 5</Link>
+          <Link to="/service6" className={`service-item ${theme}`}>Service 6</Link>
+          <Link to="/service7" className={`service-item ${theme}`}>Service 7</Link>
+          <Link to="/service8" className={`service-item ${theme}`}>Service 8</Link>
+
           </div>
         </div>
       )}

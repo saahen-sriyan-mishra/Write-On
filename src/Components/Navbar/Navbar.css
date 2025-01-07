@@ -56,13 +56,28 @@
   }
   
   .services-box.light {
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for white theme */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for white theme */
     color: #000; /* Dark text for white theme */
   }
   
   .services-box.dark {
     background-color: rgba(0, 0, 0, 0.8); /* Dark background for dark theme */
   }
+
+
+  @media (max-width: 620px) {
+    .services-box {
+      top: 0;
+        margin-top: 100px; /* Adds margin of 100px from the top */
+    }
+}
+
+@media (max-width: 506px) {
+  .services-box {
+    top: 0;
+      margin-top: 130px; /* Adds margin of 100px from the top */
+  }
+}
   
   .services-grid {
     display: flex;
@@ -72,18 +87,52 @@
   }
   
   .service-item {
-    background-color: #333;
+    background-color: #3f3f3f;
     padding: 15px 30px;
     border-radius: 5px;
+    border: 3px solid black;
     text-align: center;
     width: 150px;
     color: white;
     cursor: pointer;
   }
-  
+
   .service-item:hover {
-    background-color: #555;
+    transform: scale(1.02);
   }
+  
+/* Hover effect for service items in dark theme */
+.service-item.dark:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Hover effect for service items in light theme */
+.service-item.light:hover {
+  background-color: #000000;
+
+}
+
+
+
+
+  @media (max-width: 1350px) {
+    .services-grid {
+        display: grid;
+        margin: 0 250px 0;
+        grid-template-columns: repeat(4, 2fr); /* 8 columns */
+        justify-items: center;
+    }
+}
+
+@media (max-width: 680px) {
+  .services-grid {
+    display: grid;
+        margin: 0 150px 0;
+        grid-template-columns: repeat(2, 4fr); /* 8 columns */
+        justify-items: center;
+  }
+}
   
 
 
