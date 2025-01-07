@@ -1,4 +1,5 @@
 import React from 'react';
+import './AllServices.css'; 
 
 const Service1 = () => {
   return (

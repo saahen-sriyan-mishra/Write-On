@@ -82,19 +82,49 @@ const Home = ({ theme, setTheme }) => {
         </div>
       </div>
 
-      <div className='Companies'>
+      <div className='Companies'> 
         {/*<div className="CompaniesHeading" style={{ marginTop: '30px', marginBottom: '-60px' }}>
           <img src={theme === 'light' ? CompLogoL : CompLogoD} alt='Background' className='CompaniesSlider' />
         </div>*/}
-        <div className="WhatsIncludedHeading" style={{ fontSize: '30px', marginTop: '60px', marginBottom: '-50px', textAlign:'center' }}>
+       <div className="WhatsIncludedHeading" style={{ fontSize: '30px', marginTop: '60px', marginBottom: '-50px', textAlign:'center' }}>
       <h3>Trusted by Brands</h3>
     </div>
-        <div className='tech-slideshow'>
+ {/*       <div className='tech-slideshow'>
           <div className='mover-1'></div>
           <div className='mover-2'></div>
-        </div>
+           </div>
+*/}
       </div>
 
+
+
+
+<div className="carousel">
+        <div className="group">
+          <div className="card"><img src="image1.jpg" alt="Image 1" /></div>
+          <div className="card"><img src="image2.jpg" alt="Image 2" /></div>
+          <div className="card"><img src="image3.jpg" alt="Image 3" /></div>
+          <div className="card"><img src="image1.jpg" alt="Image 4" /></div>
+          <div className="card"><img src="image2.jpg" alt="Image 5" /></div>
+          <div className="card"><img src="image3.jpg" alt="Image 6" /></div>
+          <div className="card"><img src="image1.jpg" alt="Image 7" /></div>
+          <div className="card"><img src="image2.jpg" alt="Image 8" /></div>
+          <div className="card"><img src="image3.jpg" alt="Image 9" /></div>
+          <div className="card"><img src="image1.jpg" alt="Image 10" /></div>
+        </div>
+        <div aria-hidden className="group">
+          <div className="card"><img src="image1.jpg" alt="Image 1" /></div>
+          <div className="card"><img src="image2.jpg" alt="Image 2" /></div>
+          <div className="card"><img src="image3.jpg" alt="Image 3" /></div>
+          <div className="card"><img src="image1.jpg" alt="Image 4" /></div>
+          <div className="card"><img src="image2.jpg" alt="Image 5" /></div>
+          <div className="card"><img src="image3.jpg" alt="Image 6" /></div>
+          <div className="card"><img src="image1.jpg" alt="Image 7" /></div>
+          <div className="card"><img src="image2.jpg" alt="Image 8" /></div>
+          <div className="card"><img src="image3.jpg" alt="Image 9" /></div>
+          <div className="card"><img src="image1.jpg" alt="Image 10" /></div>
+        </div>
+      </div>
 
       <div className='WhatsIncludedSection'>
   {/*<div className="WIHeading" style={{ marginTop: '0px', marginBottom: '0px' }}>
@@ -276,11 +306,14 @@ const Home = ({ theme, setTheme }) => {
 
 
 
+
   
-<section className="feedback-section">
-  <div className="feedback-title" style={{fontSize: '30px', margin: '50px 0 40px 0' }}>
-    <h3>What do our clients say about us?</h3>
+ {/*<section className="feedback-section">
+  <div className="feedback-title" style={{fontSize: '30px', margin: '50px 0 -20px 0'}}>
+    <h3>What do our clients say about us?</h3> 
   </div>
+  */}
+  {/*
   <div className="feedback-collage">
     <div className="feedback-item feedback-1">
       <img src="https://via.placeholder.com/400x200" alt="Client feedback background" className="feedback-bg" />
@@ -325,11 +358,49 @@ const Home = ({ theme, setTheme }) => {
       </div>
     </div>
   </div>
-</section>
+*/}
+{/*</section> */}
+
+
+<div className="Why-us" style={{ fontSize: '30px', marginTop: '60px', marginBottom: '30px', textAlign:'center' }}>
+      <h3>What do our clients say about us?</h3>
+    </div>
+
+
+<div className="carousel">
+        <div className="groupf">
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
+          <br/><p>- CEO</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
+          <br/><p>- Content Promotion Head</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
+          <br/><p>- Head of Marketing</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
+          <br/><p>- Head of Marketing</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
+          <br/><p>- Digital Marketing Manager</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
+          <br/><p>- Social Media Manager</p></div>
+        </div>
+        <div aria-hidden className="groupf">
+        <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
+        <br/><p>- CEO</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
+          <br/><p>- Content Promotion Head</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
+          <br/><p>- Head of Marketing</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
+          <br/><p>- Head of Marketing</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
+          <br/><p>- Digital Marketing Manager</p></div>
+          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
+          <br/><p>- Social Media Manager</p></div>
+        </div>
+      </div>
 
 
 <section className="faqs-section">
-  <div className="faqs-title" style={{ fontSize: '30px', margin: '30px 0' }}>
+  <div className="faqs-title" style={{ fontSize: '30px', margin: '-30px 0 30px' }}>
     <h3>FAQ’s</h3>
   </div>
   <div className='All-FAQ-Content'>
