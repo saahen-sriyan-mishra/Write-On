@@ -49,12 +49,16 @@ export default Home;
 
 import React, { useState, useEffect } from 'react';
 import './Home.scss';
-import MainImg from '../../assets/Hero Banner (1).png'
+import MainImg from '../../assets/Hero Banner (1).png';
 
 
-import OfferMiddle3DImage from '../../assets/Offer3DImage.png'
+import OfferMiddle3DImage from '../../assets/Offer3DImage.png';
 
-import FAQImage from '../../assets/FAQ_Img.png'
+import FAQImage from '../../assets/FAQ_Img.png';
+
+import Typewriter from "typewriter-effect";
+
+
 
 //import CompLogoL from '../../assets/Trusted By Brands.png';
 //import CompLogoD from '../../assets/Trusted By BrandsD.png';
@@ -66,12 +70,34 @@ const Home = ({ theme, setTheme }) => {
 
   const [wordCount, setWordCount] = useState(0); // Starting value
   const [serviceMultiplier, setServiceMultiplier] = useState(0); // Default service multiplier
-
+{/*}
   const [checkedFAQ, setCheckedFAQ] = useState(null);
 
   const handleCheckboxChange = (id) => {
     setCheckedFAQ(checkedFAQ === id ? null : id);
-  };
+  };*/}
+
+  useEffect(() => {
+    const handleCheckboxChange = (event) => {
+      const checkboxes = document.querySelectorAll('.faq-toggle');
+      checkboxes.forEach((checkbox) => {
+        if (checkbox !== event.target) {
+          checkbox.checked = false;
+        }
+      });
+    };
+
+    const checkboxes = document.querySelectorAll('.faq-toggle');
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', handleCheckboxChange);
+    });
+
+    return () => {
+      checkboxes.forEach((checkbox) => {
+        checkbox.removeEventListener('change', handleCheckboxChange);
+      });
+    };
+  }, []);
 
   return (
     <div className={`HomePage ${theme}`}>
@@ -399,7 +425,7 @@ const Home = ({ theme, setTheme }) => {
           <br/><p style={{textAlign:'right'}}>- Social Media Manager</p></div>
         </div>        
       </div>
-{/*}
+
 <section className="faqs-section">
   <div className="faqs-title" style={{ fontSize: '30px', margin: '20px 0 30px' }}>
     <h3 style={{fontFamily:'poppins'}}>FAQ’s</h3>
@@ -446,7 +472,8 @@ const Home = ({ theme, setTheme }) => {
   </div>
 </section>
 
-*/}
+
+{/*}
 <section className="faqs-section">
       <div className="faqs-title" style={{ fontSize: '30px', margin: '20px 0 30px' }}>
         <h3 style={{ fontFamily: 'Poppins' }}>FAQ’s</h3>
@@ -571,14 +598,14 @@ const Home = ({ theme, setTheme }) => {
       </div>
     </section>
 
-
+*/}
 
 <footer className="vep-footer">
-  <div className="vep-footer-left">
-    <p className="vep-tagline" style={{fontFamily:'poppins'}}>"Write your story,<br/> leave your mark!"</p>
-    <p style={{ fontSize:'10px'}}>&copy; 2024 WriteOn. All rights reserved.</p>
-  </div>
   <div className="vep-footer-center">
+    <p className="vep-tagline" style={{fontFamily:'poppins', fontSize:'44px', textAlign:'center', color:'black'}}>Content That accelerates Growth!</p>
+    
+  </div>
+  <div className="vep-footer-w">
     <div className="vep-social-icons">
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
         <img src="path-to-instagram-placeholder.png" alt="Instagram" className="vep-social-icon" />
@@ -590,19 +617,58 @@ const Home = ({ theme, setTheme }) => {
         <img src="path-to-twitter-placeholder.png" alt="Twitter" className="vep-social-icon" />
       </a>
     </div>
-  </div>
-  <div className="vep-footer-right">
-    <p>
-      <strong style={{fontFamily:'poppins'}}>Contacts</strong>
+{/*}
+    <div className="Text-Effect">
+  <Typewriter
+    onInit={(typewriter) => {
+      typewriter
+        .changeDelay(50) // Set the typing speed (lower value means faster typing)
+        .typeString("<span class='typewriter-text'>Ready For your Content?</span>")
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString("<span class='typewriter-text'>Get in Touch with Us!</span>")
+        .start();
+    }}
+  />
+</div> */}
+
+<div className="Text-Effect">
+  <Typewriter
+    options={{
+      loop: true, // Enable looping
+      delay: 50, // Set the typing speed
+    }}
+    onInit={(typewriter) => {
+      typewriter
+        .typeString("<span class='typewriter-text'>Ready For Content?</span>")
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString("<span class='typewriter-text'>Get in Touch!</span>")
+        .pauseFor(1000)
+        .deleteAll()
+        .start(); // Start the typewriter effect
+    }}
+  />
+</div>
+
+
+
+
+    <div className ="Right">
+
+    <p style={{textAlign: 'right'}}>
+      <strong style={{fontSize: '34px', color:'black', fontFamily:'poppins'}}>Contacts</strong>
       <a href="mailto:sairaj@writeon.in" className="vep-footer-link">
         sairaj@writeon.in
       </a>
-      <br />
       <a href="tel:+7008289924" className="vep-footer-link">
         +91 7008289924
       </a>
     </p>
-  </div>
+    </div>
+    
+    </div>
+    <p style={{ fontSize:'10px',fontFamily:'poppins', textAlign:'center', color:'black'}}>&copy; 2024 WriteOn. All rights reserved.</p>
 </footer>
 
 
