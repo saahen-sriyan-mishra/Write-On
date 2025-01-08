@@ -49,12 +49,12 @@ export default Home;
 
 import React, { useState, useEffect } from 'react';
 import './Home.scss';
-import mainbg from '../../assets/bar-logo.png';
+import MainImg from '../../assets/Hero Banner (1).png'
 
 
 import OfferMiddle3DImage from '../../assets/Offer3DImage.png'
 
-import FAQImage from '../../assets/FaqImage.png'
+import FAQImage from '../../assets/FAQ_Img.png'
 
 //import CompLogoL from '../../assets/Trusted By Brands.png';
 //import CompLogoD from '../../assets/Trusted By BrandsD.png';
@@ -66,6 +66,12 @@ const Home = ({ theme, setTheme }) => {
 
   const [wordCount, setWordCount] = useState(0); // Starting value
   const [serviceMultiplier, setServiceMultiplier] = useState(0); // Default service multiplier
+
+  const [checkedFAQ, setCheckedFAQ] = useState(null);
+
+  const handleCheckboxChange = (id) => {
+    setCheckedFAQ(checkedFAQ === id ? null : id);
+  };
 
   return (
     <div className={`HomePage ${theme}`}>
@@ -80,6 +86,7 @@ const Home = ({ theme, setTheme }) => {
 
           <p><br />Pay as little as ₹0.60 per word and start immediately</p>
         </div>
+        <img src={MainImg} alt="MainImg" className="MainImg" />
       </div>
 
       <div className='Companies'> 
@@ -392,7 +399,7 @@ const Home = ({ theme, setTheme }) => {
           <br/><p style={{textAlign:'right'}}>- Social Media Manager</p></div>
         </div>        
       </div>
-
+{/*}
 <section className="faqs-section">
   <div className="faqs-title" style={{ fontSize: '30px', margin: '20px 0 30px' }}>
     <h3 style={{fontFamily:'poppins'}}>FAQ’s</h3>
@@ -438,6 +445,131 @@ const Home = ({ theme, setTheme }) => {
   </div>
   </div>
 </section>
+
+*/}
+<section className="faqs-section">
+      <div className="faqs-title" style={{ fontSize: '30px', margin: '20px 0 30px' }}>
+        <h3 style={{ fontFamily: 'Poppins' }}>FAQ’s</h3>
+      </div>
+      <div className="All-FAQ-Content">
+        <img src={FAQImage} alt="FAQImage" className="FAQImage" />
+        <div className="faqs-container">
+          <div>
+            <input
+              type="checkbox"
+              name="faq"
+              id="faq1"
+              className="faq-toggle"
+              checked={checkedFAQ === 'faq1'}
+              onChange={() => handleCheckboxChange('faq1')}
+            />
+            <label htmlFor="faq1" className="faq-question">
+              What is the pricing for your services?
+            </label>
+            <div className="faq-answer">
+              <p>
+                It completely depends on your requirements but usually, we charge ₹0.60 per word for any type of content. (This price is temporary and may change soon. However, if you register at this rate of ₹0.60 before we announce any new pricing, you'll be charged this rate for your purchase.)
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="faq"
+              id="faq2"
+              className="faq-toggle"
+              checked={checkedFAQ === 'faq2'}
+              onChange={() => handleCheckboxChange('faq2')}
+            />
+            <label htmlFor="faq2" className="faq-question">
+              How can WriteOn help me obtain the right content?
+            </label>
+            <div className="faq-answer">
+              <p>
+                We have a team of dedicated in-house content writers with expertise in creating engaging content for blogs, social media, and more. We ensure that your content is both interesting and captivating for your customers.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="faq"
+              id="faq3"
+              className="faq-toggle"
+              checked={checkedFAQ === 'faq3'}
+              onChange={() => handleCheckboxChange('faq3')}
+            />
+            <label htmlFor="faq3" className="faq-question">
+              Why choose a content writing company instead of hiring in-house writers?
+            </label>
+            <div className="faq-answer">
+              <p>
+                Content writing companies provide professional services with specialized expertise. If you find a company that offers high-quality content at a low price, why not take advantage of this opportunity? Additionally, you have the flexibility to cancel anytime or add services as needed.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="faq"
+              id="faq4"
+              className="faq-toggle"
+              checked={checkedFAQ === 'faq4'}
+              onChange={() => handleCheckboxChange('faq4')}
+            />
+            <label htmlFor="faq4" className="faq-question">
+              What kind of services do you offer?
+            </label>
+            <div className="faq-answer">
+              <p>
+                We specialize in a variety of content writing services, including blogs, articles, social media posts, email writing, website content, and more. If you have specific writing needs or ideas in mind, feel free to reach out to us at sairaj@writeon.in
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="faq"
+              id="faq5"
+              className="faq-toggle"
+              checked={checkedFAQ === 'faq5'}
+              onChange={() => handleCheckboxChange('faq5')}
+            />
+            <label htmlFor="faq5" className="faq-question">
+              How do you handle deadlines?
+            </label>
+            <div className="faq-answer">
+              <p>
+                We take deadlines seriously and are committed to meeting them. If you have a rush job, let us know, and we’ll do our best to accommodate your needs.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="faq"
+              id="faq6"
+              className="faq-toggle"
+              checked={checkedFAQ === 'faq6'}
+              onChange={() => handleCheckboxChange('faq6')}
+            />
+            <label htmlFor="faq6" className="faq-question">
+              Can I see samples of your work?
+            </label>
+            <div className="faq-answer">
+              <p>
+                Yes, we can provide samples or case studies of our previous projects. Just ask at sairaj@writeon.in
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
