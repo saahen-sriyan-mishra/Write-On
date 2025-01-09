@@ -119,7 +119,7 @@ const Home = ({ theme, setTheme }) => {
         {/*<div className="CompaniesHeading" style={{ marginTop: '30px', marginBottom: '-60px' }}>
           <img src={theme === 'light' ? CompLogoL : CompLogoD} alt='Background' className='CompaniesSlider' />
         </div>*/}
-       <div className="WhatsIncludedHeading" style={{ fontSize: '30px', marginTop: '60px', marginBottom: '-50px', textAlign:'center' }}>
+       <div className="WhatsIncludedHeading" style={{ fontSize: '30px', marginTop: '0px', marginBottom: '-50px', textAlign:'center' }}>
       <h3 style={{fontFamily:'poppins'}}>Trusted by Brands</h3>
     </div>
  {/*       <div className='tech-slideshow'>
