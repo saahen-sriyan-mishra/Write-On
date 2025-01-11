@@ -5,7 +5,7 @@ import WorkImg from '../../assets/How its work.png';
 import { FaStar } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
 
-import FAQImage from '../../assets/FAQ_Img.png'
+import FAQImage from '../../assets/FaqImage.png';
 
 
 
@@ -120,7 +120,7 @@ engaging, meaningful, data or fact-based, interesting.</p>
     <h3 style={{fontFamily:'poppins'}}>FAQ’s</h3>
   </div>
   <div className='All-FAQ-Content'>
-  <img src={FAQImage} alt="FAQImage" className="FAQImage" style={{marginTop: '-30px'}} />
+    <img src={FAQImage} alt="FAQImage" className="FAQImage" style={{marginTop: '-80px'}} />
   <div className="faqs-container">
     <input type="checkbox" name="faq" id="faq1" className="faq-toggle" />
     <label htmlFor="faq1" className="faq-question">What is the pricing for your services?</label>

@@ -608,13 +608,13 @@ const Home = ({ theme, setTheme }) => {
   <div className="vep-footer-w">
     <div className="vep-social-icons">
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-        <img src="path-to-instagram-placeholder.png" alt="Instagram" className="vep-social-icon" />
+        <img src="path-to-instagram-placeholder.png" alt="" className="vep-social-icon" />???????
       </a>
       <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-        <img src="path-to-linkedin-placeholder.png" alt="LinkedIn" className="vep-social-icon" />
+        <img src="path-to-linkedin-placeholder.png" alt="" className="vep-social-icon" />???????
       </a>
       <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-        <img src="path-to-twitter-placeholder.png" alt="Twitter" className="vep-social-icon" />
+        <img src="path-to-twitter-placeholder.png" alt="" className="vep-social-icon" />??????
       </a>
     </div>
 {/*}
