@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-
 import logo_light from '../../assets/logo-white.png';
 import logo_dark from '../../assets/logo-black.png';
 import toggle_light from '../../assets/day.png';
@@ -11,6 +10,10 @@ const Navbar = ({ theme, setTheme }) => {
   const [isServicesVisible, setIsServicesVisible] = useState(false);
   const isToggling = useRef(false);
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const toggle_mode = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
@@ -61,15 +64,14 @@ const Navbar = ({ theme, setTheme }) => {
       {isServicesVisible && (
         <div className={`services-box ${theme === 'light' ? 'light' : 'dark'}`}>
           <div className="services-grid">
-          <Link to="/service1" className={`service-item ${theme}`}>Service 1</Link>
-          <Link to="/service2" className={`service-item ${theme}`}>Service 2</Link>
-          <Link to="/service3" className={`service-item ${theme}`}>Service 3</Link>
-          <Link to="/service4" className={`service-item ${theme}`}>Service 4</Link>
-          <Link to="/service5" className={`service-item ${theme}`}>Service 5</Link>
-          <Link to="/service6" className={`service-item ${theme}`}>Service 6</Link>
-          <Link to="/service7" className={`service-item ${theme}`}>Service 7</Link>
-          <Link to="/service8" className={`service-item ${theme}`}>Service 8</Link>
-
+            <Link to="/service1" className={`service-item ${theme}`}>Service 1</Link>
+            <Link to="/service2" className={`service-item ${theme}`}>Service 2</Link>
+            <Link to="/service3" className={`service-item ${theme}`}>Service 3</Link>
+            <Link to="/service4" className={`service-item ${theme}`}>Service 4</Link>
+            <Link to="/service5" className={`service-item ${theme}`}>Service 5</Link>
+            <Link to="/service6" className={`service-item ${theme}`}>Service 6</Link>
+            <Link to="/service7" className={`service-item ${theme}`}>Service 7</Link>
+            <Link to="/service8" className={`service-item ${theme}`}>Service 8</Link>
           </div>
         </div>
       )}

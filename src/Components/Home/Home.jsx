@@ -297,7 +297,7 @@ const Home = ({ theme, setTheme }) => {
 
     <div className="slider-container">
       <label className="slider-label" htmlFor="word-slider">
-        Word Count: {wordCount}
+        Word Count (Use the slider below): {wordCount}
       </label>
       <input
         className="word-slider"
