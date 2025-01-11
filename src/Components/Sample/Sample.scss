@@ -1,0 +1,105 @@
+.grid-container {
+  margin: 110px 25px 0px;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(4, 1fr);   /* 4 rows */
+  gap: 10px; /* Optional: Adds space between grid items */
+}
+
+@media(max-width:647px){
+  .grid-container {
+    margin-top: 140px}
+}
+@media(max-width:519.5px){
+  .grid-container {
+    margin-top: 170px }
+}
+
+@media(min-width:1100px){
+  .grid-container {
+    margin: 0px 240px}
+}
+
+
+
+.grid-container1,
+.grid-container2 {
+  
+  flex: 1; // Distribute equal space between the two containers
+  padding: 10px; // Optional: add some spacing inside the containers
+}
+
+.grid-container1 {
+   // Optional: add background color for distinction
+}
+
+.grid-container2 {
+   // Optional: add background color for distinction
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4,
+.grid-item5, .grid-item6, .grid-item7, .grid-item8 {
+  min-width: 200px;
+  max-width: 500px;
+  background-color: #fff700;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.grid-item1 {
+  
+  height:250px;
+
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.grid-item2 {
+  padding: 20px;
+  height:180px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.grid-item3 {
+  padding: 20px;
+  text-align: center;
+  height:260px;
+  margin: 10px 0px;
+}
+
+.grid-item4 {
+  padding: 20px;
+  height:160px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.grid-item5 {
+  padding: 20px;
+  height:180px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.grid-item6 {
+  padding: 20px;
+  text-align: center;
+  height:180px;
+  margin: 10px 0px;
+}
+
+.grid-item7 {
+  padding: 20px;
+  height:250px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.grid-item8 {
+  padding: 20px;
+  height:240px;
+  text-align: center;
+  margin: 10px 0px;
+}
+

@@ -657,8 +657,8 @@ const Home = ({ theme, setTheme }) => {
     <div className ="Right">
 
     <p style={{textAlign: 'right'}}>
-      <strong style={{fontSize: '34px', color:'black', fontFamily:'poppins'}}>Contacts</strong>
-      <a href="mailto:sairaj@writeon.in" className="vep-footer-link">
+      {/*<strong style={{fontSize: '28px', color:'black', fontFamily:'poppins'}}>Contacts</strong>
+      <br/><br/>*/}<a href="mailto:sairaj@writeon.in" className="vep-footer-link">
         sairaj@writeon.in
       </a>
       <a href="tel:+7008289924" className="vep-footer-link">

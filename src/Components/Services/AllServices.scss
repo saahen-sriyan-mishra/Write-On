@@ -1,5 +1,5 @@
 .Service { 
-    margin: 0 20px;
+    margin: 0 25px;
     .ContactSectionx { 
       padding: 0px; 
       text-align: center;
@@ -66,17 +66,21 @@
     justify-content: space-around;
     align-items: flex-start;
     margin-top: 20px;
+
   
     .Cardx {
       border: 1px solid #ccc;
+      color: #000000;
       padding: 20px;
       border-radius: 5px;
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       
       max-height: 250px; // Set a fixed height for all cards 
       text-align: center; // Center-align all text
-      background-color: #85858566;
+      background-color: #ededed;
+     // box-shadow: 5px 15px 15px rgb(55, 55, 55), 5px 15px 5px rgb(224, 224, 224);
+
       &:hover {
         transform:  translateY(-5px);
         transition: transform .5s ease;
@@ -85,7 +89,7 @@
     }
   }
   
-  @media (max-width: 700px) {
+  @media (max-width: 950px) {
     .WICardsx {
       margin: 0 150px;}
     .WICardsx {
@@ -94,34 +98,107 @@
       .Cardx:nth-child(2),
       .Cardx:nth-child(3),
       .Cardx:nth-child(4)  
-      { margin-top: 20px;}
+      { margin-top: 40px;}
     }
   
   }
-  @media (min-width: 701px) {
+
+  @media (min-width: 1250px) {
     .WICardsx {
-      margin: 0px;}
-  
+      margin: 0 150px;
+    }}
+
+    .WorkImg {
+      padding: 10px;
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      box-sizing: border-box;
+      border: 2px solid black;
+      background-color: #ffffff;
+      border-radius: 10px;
     }
-  
-  
-    @media (min-width: 1001px) {
-      .WICardsx {
-        margin: 0 100px;}
     
-        .Cardx {
-          width: 300px;
-        }
+
+     
+    .WhatsIncludedfb{
+      width: 300px; // Adjust the width to your desired size
+      height: auto; // Maintain aspect ratio
+      object-fit: contain; // Ensure the image fits within the bounds without distortion
+      transition: transform 0.3s ease-in-out; // Optional: Add a smooth transition effect for resizing
+      margin-top: 20px;
+    }
+    .WIHeadingfb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: -60px;
+    }
+    
+    .WICardsfb {
+      margin: 0 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-top: 20px;
+    
+      .Cardfb {
+        border: 2px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+        color: black;
+        
+        max-height: 250px; // Set a fixed height for all cards 
+        text-align: center; // Center-align all text
+        background-color: #fffbda;
+/*        &:hover {
+          transform:  translateY(-2px);
+          transition: transform .3s ease;
+        }*/
+        
+      }
+    }
+    
+    @media (max-width: 700px) {
+      .WICardsfb {
+        margin: 0 150px;}
+      .WICardsfb {
+        flex-direction: column;
+        align-items: center;
+        .Cardfb:nth-child(2),
+        .Cardfb:nth-child(3) 
+        { margin-top: 20px;}
+      }
+    
+    }
+    @media (min-width: 701px) {
+      .WICardsfb {
+        margin: 0px;}
     
       }
-  
-      @media (min-width: 1201px) {
-        .WICardsx {
-          margin: 0 150px;}
+    
+    
+      @media (min-width: 1001px) {
+        .WICardsfb {
+          margin: 0 100px;}
       
-          .Cardx {
+          .Cardfb {
             width: 300px;
           }
       
         }
-  
+    
+        @media (min-width: 1201px) {
+          .WICardsfb {
+            margin: 0 150px;}
+        
+            .Cardfb {
+              width: 300px;
+            }
+        
+          }
