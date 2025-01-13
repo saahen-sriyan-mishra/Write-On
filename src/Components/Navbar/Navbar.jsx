@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo_light from '../../assets/logo-white.png';
 import logo_dark from '../../assets/logo-black.png';
+import logo_light_s from '../../assets/logo-white-s.png';
+import logo_dark_s from '../../assets/logo-black-s.png';
 import toggle_light from '../../assets/day.png';
 import toggle_dark from '../../assets/night.png';
 
@@ -44,14 +46,35 @@ const Navbar = ({ theme, setTheme }) => {
 
   const isActive = (path) => location.pathname === path;
 
+  const getLogo = () => {
+    if (window.innerWidth < 600) {
+      return theme === 'light' ? logo_dark_s : logo_light_s;
+    }
+    return theme === 'light' ? logo_dark : logo_light;
+  };
+
   return (
     <div className="Navbar">
-      <img src={theme === 'light' ? logo_dark : logo_light} alt="" className="Logo" />
+      <img src={getLogo()} alt="Logo" className="Logo" />
       <ul>
         <li className={isActive('/') ? 'active' : ''}>
           <Link to="/">Home</Link>
         </li>
-        <li onClick={toggleServices} className={isActive('/service1') || isActive('/service2') || isActive('/service3') || isActive('/service4') || isActive('/service5') || isActive('/service6') || isActive('/service7') || isActive('/service8') ? 'active' : ''}>
+        <li
+          onClick={toggleServices}
+          className={
+            isActive('/service1') ||
+            isActive('/service2') ||
+            isActive('/service3') ||
+            isActive('/service4') ||
+            isActive('/service5') ||
+            isActive('/service6') ||
+            isActive('/service7') ||
+            isActive('/service8')
+              ? 'active'
+              : ''
+          }
+        >
           Services
         </li>
         <li className={isActive('/sample') ? 'active' : ''}>
@@ -59,7 +82,7 @@ const Navbar = ({ theme, setTheme }) => {
         </li>
       </ul>
 
-      <img onClick={toggle_mode} src={theme === 'light' ? toggle_dark : toggle_light} alt="" className="Toggle-Icon" />
+      <img onClick={toggle_mode} src={theme === 'light' ? toggle_dark : toggle_light} alt="Toggle Icon" className="Toggle-Icon" />
 
       {isServicesVisible && (
         <div className={`services-box ${theme === 'light' ? 'light' : 'dark'}`}>

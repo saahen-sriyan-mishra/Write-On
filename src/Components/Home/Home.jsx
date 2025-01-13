@@ -103,7 +103,7 @@ const Home = ({ theme, setTheme }) => {
     <div className={`HomePage ${theme}`}>
       <div className='ContactSection'>
         <div className='Text'>
-          <h1 style={{fontSize: '70px',marginBottom:'10px',fontFamily:'poppins' }}>Maximize your outbound revenue</h1>
+          <h1 style={{marginBottom:'10px',fontFamily:'poppins' }}>Maximize your outbound revenue</h1>
           <p>    <br />  We specialize in providing high-quality content written by professional writers to boost your SEO rankings, get customers, and drive up your inbound sales.</p>
           
           <button className='ContactButton' onClick={() => window.open('https://forms.gle/yourGoogleFormID', '_blank')}>
@@ -262,7 +262,7 @@ const Home = ({ theme, setTheme }) => {
 
 
   <div className="estmp" >
-    <h3 style={{ fontSize: '30px', marginTop: '30px', marginBottom: '20px', textAlign:'center', fontFamily: 'Times New Roman, Times, serif' }}>Pricing Calculator</h3>
+    <h3 style={{ fontSize: '30px', marginTop:'0px',marginBottom: '20px', textAlign:'center', fontFamily: 'Times New Roman, Times, serif' }}>Pricing Calculator</h3>
   </div>
   <div className="coolor">
     <div className="service-selector">
@@ -602,19 +602,19 @@ const Home = ({ theme, setTheme }) => {
 
 <footer className="vep-footer">
   <div className="vep-footer-center">
-    <p className="vep-tagline" style={{fontFamily:'poppins', fontSize:'44px', textAlign:'center', color:'black'}}>Content That accelerates Growth!</p>
+    <p className="vep-tagline" style={{fontFamily:'poppins', fontSize:'40px', textAlign:'center', color:'black'}}>Content That Accelerates Growth!</p>
     
   </div>
   <div className="vep-footer-w">
     <div className="vep-social-icons">
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-        <img src="path-to-instagram-placeholder.png" alt="" className="vep-social-icon" />???????
+        <img src="path-to-instagram-placeholder.png" alt="" className="vep-social-icon" />
       </a>
       <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-        <img src="path-to-linkedin-placeholder.png" alt="" className="vep-social-icon" />???????
+        <img src="path-to-linkedin-placeholder.png" alt="" className="vep-social-icon" />
       </a>
       <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-        <img src="path-to-twitter-placeholder.png" alt="" className="vep-social-icon" />??????
+        <img src="path-to-twitter-placeholder.png" alt="" className="vep-social-icon" />
       </a>
     </div>
 {/*}

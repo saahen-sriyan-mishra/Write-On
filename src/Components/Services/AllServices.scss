@@ -1,47 +1,52 @@
 .Service { 
     margin: 0 25px;
-    .ContactSectionx { 
-      padding: 0px; 
+    .ContactSectionx {
+      padding: 0px;
       text-align: center;
   
-      .Textx {  
-        margin-top: 120px; 
-        width: 100%; 
-        text-align: center; 
-        z-index: 1; 
+      .Textx {
+          margin-top: 120px;
+          width: 100%;
+          text-align: center;
+          z-index: 1;
   
-        h1 { 
-          font-size: 3rem; 
-        } 
-        
-  
-        
-      } 
-      @media (max-width: 600px){
-        .Textx{
-          margin-top: 160px; 
-        }
-        
+          h1 {
+              font-size: 3rem;
+          }
       }
   
-      .ContactButtonx { 
-        background-color: #cb00c1; /* Adjust button color as needed */ 
-        color: white; 
-        border: none; 
-        padding: 10px 20px; 
-        text-transform: uppercase; 
-        cursor: pointer; 
-        border-radius: 5px; 
-        margin: 40px 0 20px; 
-      } 
-      
+      @media (max-width: 600px) {
+          .Textx {
+              margin-top: 160px;
+          }
+      }
+  
+      .ContactButtonx {
+          background-color: #cb00c1;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          text-transform: uppercase;
+          cursor: pointer;
+          border-radius: 5px;
+          margin: 40px 0 20px;
+      }
+  
       .MainImgx {
-        display: block;
-        margin: -40px auto 0;
-        width: 400px;
-        height: 400px;
-    } 
-    } 
+          display: block;
+          margin: -40px auto 0;
+          width: 400px;
+          height: 400px;
+      }
+  
+      @media (max-width: 700px) {
+          .MainImgx {
+              width: 100%;
+              height: auto;
+          }
+      }
+  }
+  
   }
   
 
