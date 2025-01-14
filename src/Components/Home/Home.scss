@@ -1,7 +1,5 @@
-.HomePage { 
-  margin: 0 20px;
-  @media (max-width: 450px) {margin: 0 10px;}
-  overflow-x: hidden;
+.HomePage { margin: 0 20px; overflow-x: hidden; // Move declaration above the nested rule 
+  @media (max-width: 450px) { margin: 0 10px; }
   .ContactSection {
     padding: 0px;
     text-align: center;
