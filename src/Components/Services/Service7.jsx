@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import './AllServices.scss'; 
-import MainImg from '../../assets/Hero Banner (1).png';
+import MainImg from './Service Main Img/Website_Content Writing.png';
 import WorkImg from '../../assets/How its work.png';
 import { FaStar } from 'react-icons/fa';
+
+
+import FAQImage from '../../assets/FAQ.png';
+
 import Footer from '../Home/Footer'
-
-import FAQImage from '../../assets/FaqImage.png';
-
-
 
 const Service7 = () => {
 
@@ -42,10 +42,10 @@ const Service7 = () => {
     <div className='Service'>
     <div className='ContactSectionx'>
       <div className='Textx'>
-        <h1 style={{fontSize: '70px', marginBottom: '10px', fontFamily: 'poppins' }}>Blog</h1>
-        <p>70% of Consumers Prefer Brands That Share Insightful Blogs
-Never miss a chance to lose your customer. With us make your blog
-engaging, meaningful, data or fact-based, interesting.</p>
+        <h1 style={{fontSize: '70px', marginBottom: '10px', fontFamily: 'poppins' }}>Website Content Writing</h1>
+        <br/><p style={{fontSize: '1.5rem'}}>We Turn User Journeys into Stories Everyone Wants to Read. </p>
+        <br/><p>Our skilled website content writers create engaging
+        content that fits perfectly with your site’s style and voice.</p>
         <button className='ContactButtonx' onClick={() => window.open('https://forms.gle/yourGoogleFormID', '_blank')}>
           Contact Us &#8594;
         </button>
@@ -57,25 +57,29 @@ engaging, meaningful, data or fact-based, interesting.</p>
 
     <div className='WhatsIncludedSectionx'>
   <div className="WhatsIncludedHeadingx" style={{ fontSize: '30px', marginTop: '-20px', marginBottom: '30px', textAlign:'center' }}>
-      <h3 style={{fontFamily:'poppins'}}>Our blogs can help you in</h3>
+      <h3 style={{fontFamily:'poppins'}}>We help you in</h3>
     </div>
   <div className="WICardsx">
   <div className="Cardx">
-      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Plagiarism-free</h2>
-      <p style = {{marginTop: '10px'}}>Content paragraph 2</p>
+      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Enhancing User Experience</h2>
+      <p style = {{marginTop: '10px'}}>Create engaging, user-friendly content
+      for a smooth, enjoyable website experience.</p>
     </div>
     <div className="Cardx">
-      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Plagiarism-free</h2>
-      <p style = {{marginTop: '10px'}}>Content paragraph 2</p>
+      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Improving SEO Performance</h2>
+      <p style = {{marginTop: '10px'}}>Boost rankings with quality, keyword-rich
+      content.</p>
     </div>
     <div className="Cardx">
-      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Plagiarism-free</h2>
-      <p style = {{marginTop: '10px'}}>Content paragraph 2</p>
+      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Showcasing Your Brand</h2>
+      <p style = {{marginTop: '10px'}}>Create content that highlights your
+      brand’s unique voice and message.</p>
     </div>
 
     <div className="Cardx">
-      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Plagiarism-free</h2>
-      <p style = {{marginTop: '10px'}}>Content paragraph 2</p>
+      <h2 style={{fontSize: '20px', fontFamily:'poppins', backgroundColor: '#ffdd00', borderRadius: '50px', padding: '10px'}}>Driving Conversions</h2>
+      <p style = {{marginTop: '10px'}}>Use persuasive calls-to-action to convert
+      visitors into leads or customers.</p>
     </div>
   </div>
 </div>
@@ -98,17 +102,19 @@ engaging, meaningful, data or fact-based, interesting.</p>
   <div className="WICardsfb">
     <div className="Cardfb">
 
-      <p style = {{marginTop: '10px'}}>Content paragraph 1</p>
+      <p style = {{marginTop: '10px'}}>Perfect content that boosted engagement and conversions. Highly
+      recommended!</p>
       <div> {[...Array(5)].map((_, index) => ( <FaStar key={index} color="orange" /> ))} </div>
     </div>
     <div className="Cardfb">
 
-      <p style = {{marginTop: '10px'}}>Content paragraph 2</p>
+      <p style = {{marginTop: '10px'}}>The content transformed our site, making it clear, engaging, and professional.</p>
       <div> {[...Array(5)].map((_, index) => ( <FaStar key={index} color="orange" /> ))} </div>
     </div>
     <div className="Cardfb">
 
-      <p style = {{marginTop: '10px'}}>Content paragraph 3</p>
+      <p style = {{marginTop: '10px'}}>Our content connects with our audience, reflects our brand, and drives more
+      traffic.</p>
       <div> {[...Array(5)].map((_, index) => ( <FaStar key={index} color="orange" /> ))} </div>
     </div>
   </div>
@@ -120,30 +126,31 @@ engaging, meaningful, data or fact-based, interesting.</p>
     <h3 style={{fontFamily:'poppins'}}>FAQ’s</h3>
   </div>
   <div className='All-FAQ-Content'>
-  <img src={FAQImage} alt="FAQImage" className="FAQImage" style={{marginTop: '-80px'}} />
+    <img src={FAQImage} alt="FAQImage" className="FAQImage" style={{marginTop: '-80px'}} />
   <div className="faqs-container">
     <input type="checkbox" name="faq" id="faq1" className="faq-toggle" />
-    <label htmlFor="faq1" className="faq-question">What is the pricing for your services?</label>
+    <label htmlFor="faq1" className="faq-question">How do you ensure the quality of your content?</label>
     <div className="faq-answer">
-      <p>It completely depends on your requirements but usually, we charge ₹0.60 per word for any type of content. (This price is temporary and may change soon. However, if you register at this rate of ₹0.60 before we announce any new pricing, you'll be charged this rate for your purchase.)</p>
+      <p>Every piece of content is reviewed twice to catch any errors, correct
+      grammar issues, and ensure there’s no plagiarism.</p>
     </div>
 
     <input type="checkbox" name="faq" id="faq2" className="faq-toggle" />
-    <label htmlFor="faq2" className="faq-question">How can WriteOn help me obtain the right content?</label>
+    <label htmlFor="faq2" className="faq-question">How many revision rounds are allowed?</label>
     <div className="faq-answer">
-      <p>We have a team of dedicated in-house content writers with expertise in creating engaging content for blogs, social media, and more. We ensure that your content is both interesting and captivating for your customers.</p>
+      <p>You can request up to 2 rounds of revision.</p>
     </div>
 
     <input type="checkbox" name="faq" id="faq3" className="faq-toggle" />
-    <label htmlFor="faq3" className="faq-question">Why choose a content writing company instead of hiring in-house writers?</label>
+    <label htmlFor="faq3" className="faq-question">How many days will it take to deliver?</label>
     <div className="faq-answer">
-      <p>Content writing companies provide professional services with specialized expertise. If you find a company that offers high-quality content at a low price, why not take advantage of this opportunity? Additionally, you have the flexibility to cancel anytime or add services as needed.</p>
+      <p>It depends on the number of contents, but typically, if the total is
+      under 7,000 words, we can deliver within 24 hours.</p>
     </div>
-
-    <input type="checkbox" name="faq" id="faq6" className="faq-toggle" />
-    <label htmlFor="faq6" className="faq-question">Can I see samples of your work?</label>
+    <input type="checkbox" name="faq" id="faq4" className="faq-toggle" />
+    <label htmlFor="faq4" className="faq-question">What’s the best way to get in touch with you?</label>
     <div className="faq-answer">
-      <p>Yes, we can provide samples or case studies of our previous projects. Just ask at sairaj@writeon.in</p>
+      <p>Contact at sairaj@writeon.in</p>
     </div>
   </div>
   </div>

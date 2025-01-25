@@ -1,25 +1,28 @@
 // components/Footer.jsx
 import React from 'react';
 import Typewriter from 'typewriter-effect'; // Make sure to install this if not already
+import ins from '../../assets/Instagram_Bg.png';
+import link from '../../assets/Linkedin_Bg.png';
 
 const Footer = () => (
   <footer className="vep-footer">
     <div className="vep-footer-center">
-      <p className="vep-tagline" style={{ fontFamily: 'poppins', fontSize: '40px', textAlign: 'center', color: 'black' }}>
+      <p className="vep-tagline" style={{ fontFamily: 'poppins', fontSize: '1.8rem', textAlign: 'center', color: 'black' }}>
         Content That Accelerates Growth!
       </p>
     </div>
     <div className="vep-footer-w">
       <div className="vep-social-icons">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-          <img src="path-to-instagram-placeholder.png" alt="" className="vep-social-icon" />
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
-          <img src="path-to-linkedin-placeholder.png" alt="" className="vep-social-icon" />
-        </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
+      <a href="https://www.instagram.com/writeon_in/" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
+  <img src={ins} alt="" className="vep-social-icon" style={{ width: '60px', height: '60px' }} />
+</a>
+<a href="https://www.linkedin.com/company/www.write-on.co.in/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
+  <img src={link} alt="" className="vep-social-icon" style={{ width: '60px', height: '60px' }} /> 
+</a>
+
+        {/*<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="vep-footer-link">
           <img src="path-to-twitter-placeholder.png" alt="" className="vep-social-icon" />
-        </a>
+        </a>*/}
       </div>
 
       <div className="Text-Effect">

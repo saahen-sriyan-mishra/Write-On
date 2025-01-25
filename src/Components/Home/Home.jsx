@@ -49,14 +49,27 @@ export default Home;
 
 import React, { useState, useEffect } from 'react';
 import './Home.scss';
-import MainImg from '../../assets/Hero Banner (1).png';
+import MainImg from '../../assets/Home Page Main Img.png';
 
 
-import OfferMiddle3DImage from '../../assets/Offer3DImage.png';
+import OfferMiddle3DImage from '../../assets/Offer.png';
 
-import FAQImage from '../../assets/FAQ_Img.png';
+import FAQImage from '../../assets/FAQ.png';
 
 import Footer from './Footer';
+
+
+import a1 from './HD_Brand Images/2 (8).png'
+import a2 from './HD_Brand Images/pixelcut-export (1).png'
+import a3 from './HD_Brand Images/pixelcut-export (2).png'
+import a4 from './HD_Brand Images/pixelcut-export (3).png'
+import a5 from './HD_Brand Images/pixelcut-export (4).png'
+import a6 from './HD_Brand Images/pixelcut-export (5).png'
+import a7 from './HD_Brand Images/pixelcut-export (6).png'
+import a8 from './HD_Brand Images/pixelcut-export (7).png'
+import a10 from './HD_Brand Images/pixelcut-export.png'
+import a11 from './HD_Brand Images/1732698245310-removebg-preview.png'
+
 
 
 
@@ -106,11 +119,11 @@ const Home = ({ theme, setTheme }) => {
           <h1 style={{marginBottom:'10px',fontFamily:'poppins' }}>Maximize your outbound revenue</h1>
           <p>    <br />  We specialize in providing high-quality content written by professional writers to boost your SEO rankings, get customers, and drive up your inbound sales.</p>
           
-          <button className='ContactButton' onClick={() => window.open('https://forms.gle/yourGoogleFormID', '_blank')}>
+          <button className='ContactButton' onClick={() => window.open('https://forms.gle/wuMZsMWHA3fnRo739', '_blank')}>
             Contact Us &#8594;
           </button>
 
-          <p><br />Pay as little as ₹0.60 per word and start immediately</p>
+          <p><br />Pay as little as ₹0.60 per word and start immediately</p> <br /><br />
         </div>
         <img src={MainImg} alt="MainImg" className="MainImg" />
       </div>
@@ -134,28 +147,28 @@ const Home = ({ theme, setTheme }) => {
 
 <div className="carousel">
         <div className="group">
-          <div className="card"><img src="image1.jpg" alt="Image 1" /></div>
-          <div className="card"><img src="image2.jpg" alt="Image 2" /></div>
-          <div className="card"><img src="image3.jpg" alt="Image 3" /></div>
-          <div className="card"><img src="image1.jpg" alt="Image 4" /></div>
-          <div className="card"><img src="image2.jpg" alt="Image 5" /></div>
-          <div className="card"><img src="image3.jpg" alt="Image 6" /></div>
-          <div className="card"><img src="image1.jpg" alt="Image 7" /></div>
-          <div className="card"><img src="image2.jpg" alt="Image 8" /></div>
-          <div className="card"><img src="image3.jpg" alt="Image 9" /></div>
-          <div className="card"><img src="image1.jpg" alt="Image 10" /></div>
+          <div className="card"><img src={a1} alt="Image 1" /></div>
+          <div className="card"><img src={a2} alt="Image 2" /></div>
+          <div className="card"><img src={a3} alt="Image 3" /></div>
+          <div className="card"><img src={a4} alt="Image 4" /></div>
+          <div className="card"><img src={a5} alt="Image 5" /></div>
+          <div className="card"><img src={a6} alt="Image 6" /></div>
+          <div className="card"><img src={a7} alt="Image 7" /></div>
+          <div className="card"><img src={a8} alt="Image 8" /></div>
+          <div className="card"><img src={a11} alt="Image 9" /></div>
+          <div className="card"><img src={a10} alt="Image 10" /></div>
         </div>
         <div aria-hidden className="group">
-          <div className="card"><img src="image1.jpg" alt="Image 1" /></div>
-          <div className="card"><img src="image2.jpg" alt="Image 2" /></div>
-          <div className="card"><img src="image3.jpg" alt="Image 3" /></div>
-          <div className="card"><img src="image1.jpg" alt="Image 4" /></div>
-          <div className="card"><img src="image2.jpg" alt="Image 5" /></div>
-          <div className="card"><img src="image3.jpg" alt="Image 6" /></div>
-          <div className="card"><img src="image1.jpg" alt="Image 7" /></div>
-          <div className="card"><img src="image2.jpg" alt="Image 8" /></div>
-          <div className="card"><img src="image3.jpg" alt="Image 9" /></div>
-          <div className="card"><img src="image1.jpg" alt="Image 10" /></div>
+        <div className="card"><img src={a1} alt="Image 1" /></div>
+          <div className="card"><img src={a2} alt="Image 2" /></div>
+          <div className="card"><img src={a3} alt="Image 3" /></div>
+          <div className="card"><img src={a4} alt="Image 4" /></div>
+          <div className="card"><img src={a5} alt="Image 5" /></div>
+          <div className="card"><img src={a6} alt="Image 6" /></div>
+          <div className="card"><img src={a7} alt="Image 7" /></div>
+          <div className="card"><img src={a8} alt="Image 8" /></div>
+          <div className="card"><img src={a11} alt="Image 9" /></div>
+          <div className="card"><img src={a10} alt="Image 10" /></div>
         </div>
       </div>
 
@@ -168,16 +181,18 @@ const Home = ({ theme, setTheme }) => {
     </div>
   <div className="WICards">
     <div className="Card">
-      <h2 style={{fontFamily:'poppins'}}>SEO-Optimization</h2>
-      <p style = {{marginTop: '10px'}}>Content paragraph 1</p>
+      <h2 style={{fontFamily:'poppins'}}>No Quality Compromise</h2>
+      <p style = {{marginTop: '10px'}}>Always maintaining top standards.
+      </p>
     </div>
     <div className="Card">
-      <h2 style={{fontFamily:'poppins'}}>Plagiarism-free</h2>
-      <p style = {{marginTop: '10px'}}>Content paragraph 2</p>
+      <h2 style={{fontFamily:'poppins'}}>Feature Images</h2>
+      <p style = {{marginTop: '10px'}}>Feature images are key visuals that represent content.</p>
     </div>
     <div className="Card">
-      <h2 style={{fontFamily:'poppins'}}>Up to 2 revisions</h2>
-      <p style = {{marginTop: '10px'}}>Content paragraph 3</p>
+      <h2 style={{fontFamily:'poppins'}}>No AI contents</h2>
+      <p style = {{marginTop: '10px'}}> No AI contents means only human-written content is allowed.
+      </p>
     </div>
   </div>
 </div>

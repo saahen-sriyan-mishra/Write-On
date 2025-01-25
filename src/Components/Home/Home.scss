@@ -23,9 +23,9 @@
 
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 550px) {
         .Text {
-            margin-top: 120px !important;
+            margin-top: 160px !important;
         }
     }
     @media (max-width: 1100px) {
@@ -49,8 +49,8 @@
     .MainImg {
         display: block;
         margin: -40px auto 0;
-        width: 400px;
-        height: 400px;
+        width: 50%;
+        height: auto;
     }
 
     @media (max-width: 700px) {
@@ -63,6 +63,56 @@
 
 }
 
+.Service { 
+    margin: 0 25px;
+    .ContactSectionx {
+      padding: 0px;
+      text-align: center;
+  
+      .Textx {
+          margin-top: 120px;
+          width: 100%;
+          text-align: center;
+          z-index: 1;
+  
+          h1 {
+              font-size: 3rem;
+          }
+      }
+  
+      @media (max-width: 600px) {
+          .Textx {
+              margin-top: 160px;
+          }
+      }
+  
+      .ContactButtonx {
+          background-color: #cb00c1;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          text-transform: uppercase;
+          cursor: pointer;
+          border-radius: 5px;
+          margin: 40px 0 20px;
+      }
+  
+      .MainImgx {
+          display: block;
+          margin: -40px auto 0;
+          width: 100%;
+          height: auto;
+      }
+  
+      @media (max-width: 700px) {
+          .MainImgx {
+              width: 100%;
+              height: auto;
+          }
+      }
+  }
+  
+  }
 
 ///////////////////////
 //////////////////////
@@ -128,7 +178,6 @@
   }
 }
 */
-
 .carousel {
   margin: 0 auto;
   padding: 20px 0 0 0;
@@ -153,18 +202,20 @@
 .card {
   width: 100%;
   border-radius: 24px;
-  //box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 20px 0;
   padding: 20px;
   font-size: xx-large;
   justify-content: center;
   align-items: center;
   min-height: 100px;
-  overflow: hidden; /* Ensure the images fit within the card */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 100px; /* Fixed width for the image */
+  height: 100px; /* Fixed height for the image */
   border-radius: 24px;
 }
 
@@ -179,6 +230,7 @@
 
 .carousel:hover .group {
 }
+
 
 
 ///////////////////////////////////////
@@ -389,7 +441,7 @@
           @media (min-width: 701px) {
             position: relative;
             margin-top: 50px;
-            margin-left: -120%;
+            margin-left: -140%;
             
           }
 
@@ -409,7 +461,7 @@
           @media (min-width: 701px) {
             position: relative;
             margin-top: 50px;
-            margin-left: -120%;
+            margin-left: -140%;
           }
 
         }
@@ -417,7 +469,7 @@
           @media (min-width: 701px) {
             position: relative;
             margin-top: 50px;
-            margin-right: -120%;}
+            margin-right: -140%;}
 
 
         }
@@ -435,7 +487,7 @@
           @media (min-width: 701px) {
             position: relative;
             margin-top: 50px;
-            margin-right: -120%;
+            margin-right: -140%;
           }
           
         }
@@ -856,8 +908,9 @@
     .FAQImage {
     flex: 0 0 30%;
     max-width: 30%;
-    min-height: 400px;
+    min-height: 300px;
     border-radius: 10px;
+    margin-top: -60px !important;
     object-fit: cover;
     @media (max-width: 670px) {
       display: none;
@@ -870,6 +923,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+     @media (min-width: 670px) { margin-left: -50px; }
+    
 
     .faq-toggle {
       display: none;
@@ -1006,17 +1061,19 @@
 
 
 .vep-footer {
-  margin: 20px 30px;
+  margin: 10px auto 20px;
   display: flex;
   flex-direction: column;
   padding: 20px 15px;
   background-color: #bfbfbf;
+
+  max-width: 650px;
   }
   .vep-footer-w {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #bfbfbf;
   }
   
@@ -1032,7 +1089,7 @@
     
     &:hover {
       color: #000000;
-      scale: 1.05;
+      scale: 1.1;
       text-decoration: underline;
     }
   }
@@ -1062,25 +1119,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 0px;
     //height: 100vh; /* Adjust this as needed */
     text-align: center;
   }
 
   .typewriter-text {
     color: black;
-    font-size: 28px;
+    font-size: 1.3rem;
     margin: 0 10px;
     text-align: center;
     font-family: poppins;
   }
   
-  .Text-Effect{
-    @media (max-width: 660px) {
-      display: none;
-      
-    }
-  }
+
 
 
 /// 

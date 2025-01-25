@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo_light from '../../assets/logo-white.png';
 import logo_dark from '../../assets/logo-black.png';
-import logo_light_s from '../../assets/logo-white-s.png';
-import logo_dark_s from '../../assets/logo-black-s.png';
+import logo_light_s from '../Home/HD_Brand Images/bs.png';
+import logo_dark_s from '../Home/HD_Brand Images/pixelcut-export (8).png';
 import toggle_light from '../../assets/day.png';
 import toggle_dark from '../../assets/night.png';
 
@@ -12,10 +12,17 @@ const Navbar = ({ theme, setTheme }) => {
   const [isServicesVisible, setIsServicesVisible] = useState(false);
   const isToggling = useRef(false);
   const location = useLocation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const toggle_mode = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
@@ -47,7 +54,7 @@ const Navbar = ({ theme, setTheme }) => {
   const isActive = (path) => location.pathname === path;
 
   const getLogo = () => {
-    if (window.innerWidth < 600) {
+    if (windowWidth < 550) {
       return theme === 'light' ? logo_dark_s : logo_light_s;
     }
     return theme === 'light' ? logo_dark : logo_light;
@@ -87,14 +94,14 @@ const Navbar = ({ theme, setTheme }) => {
       {isServicesVisible && (
         <div className={`services-box ${theme === 'light' ? 'light' : 'dark'}`}>
           <div className="services-grid">
-            <Link to="/service1" className={`service-item ${theme}`}>Service 1</Link>
-            <Link to="/service2" className={`service-item ${theme}`}>Service 2</Link>
-            <Link to="/service3" className={`service-item ${theme}`}>Service 3</Link>
-            <Link to="/service4" className={`service-item ${theme}`}>Service 4</Link>
-            <Link to="/service5" className={`service-item ${theme}`}>Service 5</Link>
-            <Link to="/service6" className={`service-item ${theme}`}>Service 6</Link>
-            <Link to="/service7" className={`service-item ${theme}`}>Service 7</Link>
-            <Link to="/service8" className={`service-item ${theme}`}>Service 8</Link>
+            <Link to="/service1" className={`service-item ${theme}`}>Article</Link>
+            <Link to="/service2" className={`service-item ${theme}`}>Blog</Link>
+            <Link to="/service3" className={`service-item ${theme}`}>Casestudy</Link>
+            <Link to="/service4" className={`service-item ${theme}`}>Newsletter</Link>
+            <Link to="/service5" className={`service-item ${theme}`}>Copywriting</Link>
+            <Link to="/service6" className={`service-item ${theme}`}>Emailers</Link>
+            <Link to="/service7" className={`service-item ${theme}`}>Website Content</Link>
+            <Link to="/service8" className={`service-item ${theme}`}>Social Media</Link>
           </div>
         </div>
       )}

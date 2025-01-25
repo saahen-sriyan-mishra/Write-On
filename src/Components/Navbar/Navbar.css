@@ -1,187 +1,178 @@
 .Navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    padding: 1px 7%;
-    transition: 0.5s;
-    position: fixed; /* Change from relative to sticky */
-    top: 0; /* Stick to the top when scrolling */
-    z-index: 1000; /* Ensure it stays above other elements */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
-      
-  }
-  
-  .Logo {
-    width: 160px;
-    cursor: pointer;
-    @media (max-width: 450px) {
-      width: 80px;
-      height: auto;
-    }
-  }
-  
-  ul {
-    flex: 1;
-    list-style: none;
-    text-align: center;
-  }
-  
-  ul li {
-    display: inline-block;
-    margin: 10px 20px;
-    font-size: 18px;
-    line-height: 15px;
-    cursor: pointer;
-    &:hover{
-      scale: 1.1;
-      transform: translateY(-1px);
-      transition: all 0.15s ease;
-    }
-  }
-  
-  .Toggle-Icon {
-    width: 40px;
-    cursor: pointer;
-    margin-left: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1px 7%;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Logo {
+  width: 160px;
+  cursor: pointer;
+  @media (max-width: 450px) {
+    width: 80px;
     height: auto;
-    @media (max-width: 450px) {
-      margin-left: 20px;}
   }
-  
-  .container.dark .Navbar {
-    background: #000;
-    color: #fff;
+}
+
+ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 18px;
+  line-height: 15px;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+    transform: translateY(-1px);
+    transition: all 0.15s ease;
   }
-  
-  /* Services Box Styles */
+}
+
+.Toggle-Icon {
+  width: 40px;
+  cursor: pointer;
+  margin-left: 40px;
+  height: auto;
+  @media (max-width: 450px) {
+    margin-left: 20px;
+  }
+}
+
+.container.dark .Navbar {
+  background: #000;
+  color: #fff;
+}
+
+/* Services Box Styles */
+.services-box {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 10;
+  padding: 20px 0;
+}
+
+.services-box.light {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.services-box.dark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 620px) {
   .services-box {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    color: white;
-    z-index: 10;
-    padding: 20px 0;
-    
-    
+    top: 0;
+    margin-top: 100px;
   }
-  
-  .services-box.light {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for white theme */
-    color: #000; /* Dark text for white theme */
-  }
-  
-  .services-box.dark {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background for dark theme */
-  }
-
-
-  @media (max-width: 620px) {
-    .services-box {
-      top: 0;
-        margin-top: 100px; /* Adds margin of 100px from the top */
-    }
 }
 
 @media (max-width: 506px) {
   .services-box {
     top: 0;
-      margin-top: 130px; /* Adds margin of 100px from the top */
+    margin-top: 130px;
   }
 }
-  
-  .services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .service-item {
-    background-color: #000000;
-    padding: 15px 30px;
-    border-radius: 5px;
-    border: 3px solid black;
-    text-align: center;
-    width: 150px;
-    color: white;
-    cursor: pointer;
-  }
 
-  .service-item:hover {
-    transform: scale(1.02);
-  }
-  
-/* Hover effect for service items in dark theme */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #000000;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 3px solid black;
+  text-align: center;
+  width: 150px;
+  color: white;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  transform: scale(1.02);
+}
+
 .service-item.dark:hover {
   background-color: #ffffff;
   color: black;
 }
 
-/* Hover effect for service items in light theme */
 .service-item.light:hover {
   background-color: #ffffff;
-  color:#000000;
+  color: #000000;
 }
 
-
-
-
-  @media (max-width: 1350px) {
-    .services-grid {
-        display: grid;
-        margin: 0 250px 0;
-        grid-template-columns: repeat(4, 2fr); /* 8 columns */
-        justify-items: center;
-    }
+@media (max-width: 1350px) {
+  .services-grid {
+    display: grid;
+    margin: 0 250px;
+    grid-template-columns: repeat(4, 2fr);
+    justify-items: center;
+  }
 }
 
 @media (max-width: 680px) {
   .services-grid {
     display: grid;
-        margin: 0 150px 0;
-        grid-template-columns: repeat(2, 4fr); /* 8 columns */
-        justify-items: center;
+    margin: 0 150px;
+    grid-template-columns: repeat(2, 4fr);
+    justify-items: center;
   }
 }
-  
 
+/* Media query for ul flex direction column */
+@media (max-width: 550px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
 
-  /* Navbar.css */
+/* Navbar.css */
 
 /* Reset the link styles */
 .Navbar ul li a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit the text color */
+  text-decoration: none;
+  color: inherit;
 }
 
 .Navbar ul li {
   cursor: pointer;
-  /* You can add more styling here if needed */
 }
 
-/* Optional: If you want to remove hover effects completely */
 .Navbar ul li:hover,
 .Navbar ul li a:hover {
-  text-decoration: none; /* Ensure no underline appears on hover */
-  color: inherit; /* Keep the same color on hover */
+  text-decoration: none;
+  color: inherit;
 }
 
-
-/* Navbar.css */
-
-/* Active link styling */
 .Navbar ul li.active a {
   text-decoration: underline;
-}
-
-/* Reset the link styles */
-.Navbar ul li a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit the text color */
 }
 
 .Navbar ul li.active {
@@ -192,7 +183,7 @@
   text-decoration: underline;
 }
 
-/* Reset the link styles */
-.Navbar ul li a, .services-grid .service-item {
-  text-decoration: none; /* Remove underline */
+.Navbar ul li a,
+.services-grid .service-item {
+  text-decoration: none;
 }

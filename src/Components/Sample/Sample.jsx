@@ -6,58 +6,69 @@ import Footer from '../Home/Footer';
 const Sample = () => {
   return (
     <div>
-    <div className="grid-container">
-      <div className="grid-container1">
-      <a href="#" target="_blank"><div className="grid-item1"> 1
-      <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div> 
-</div></a>
+      <div className="grid-container">
+        <div className="grid-container1">
+          <a href="#" target="_blank"><div className="grid-item1">
+            <span>Article</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
 
-<a href="#" target="_blank"><div className="grid-item2">2
-        <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div>
-        </div></a>
-        <a href="#" target="_blank"><div className="grid-item3">3
-        <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div> 
-        </div></a>
-        <a href="#" target="_blank"><div className="grid-item4">4
-        <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div>
-        </div></a>
+          <a href="#" target="_blank"><div className="grid-item2">
+            <span>Blog</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
+
+          <a href="#" target="_blank"><div className="grid-item3">
+            <span>Newsletter</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
+
+          <a href="#" target="_blank"><div className="grid-item4">
+            <span>Case Study</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
+        </div>
+
+        <div className="grid-container2">
+          <a href="#" target="_blank"><div className="grid-item5">
+            <span>Copywriting</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
+
+          <a href="#" target="_blank"><div className="grid-item6">
+            <span>Emailers</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
+
+          <a href="#" target="_blank"><div className="grid-item7">
+            <span>Website Content</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
+
+          <a href="#" target="_blank"><div className="grid-item8">
+            <span>Social Media</span>
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div></a>
+        </div>
       </div>
-      <div className="grid-container2">
-      <a href="#" target="_blank"> <div className="grid-item5">5
-        <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div>
-        </div> </a>
-        <a href="#" target="_blank"><div className="grid-item6">6
-        <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div>
-        </div> </a>
-        <a href="#" target="_blank"><div className="grid-item7">7
-        <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div>
-        </div> </a>
-        <a href="#" target="_blank"><div className="grid-item8">8
-        <div className="image">
-    <img src={img1} alt="" style={{ display: 'block', margin: ' 90px auto -60px' }} />
-  </div>
-        </div> </a>
-      </div>
-    </div>
 
-    <Footer />
-
-
-
+      <Footer />
     </div>
   );
 };
