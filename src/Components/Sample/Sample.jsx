@@ -29,7 +29,7 @@ const Sample = () => {
             </div>
           </div></a>
 
-          <a href="#" target="_blank"><div className="grid-item4">
+          <a href="https://drive.google.com/file/d/1AphHC9fmW4WEH_MmKXBz0n6qSlwIlW84/view?usp=drive_link" target="_blank"><div className="grid-item4">
             <span>Case Study</span>
             <div className="image">
               <img src={img1} alt="" />

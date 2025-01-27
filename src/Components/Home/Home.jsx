@@ -123,7 +123,7 @@ const Home = ({ theme, setTheme }) => {
             Contact Us &#8594;
           </button>
 
-          <p><br />Pay as little as ₹0.60 per word and start immediately</p> <br /><br />
+          <p ><br />Pay as little as ₹0.60 per word and start immediately</p> <br /><br />
         </div>
         <img src={MainImg} alt="MainImg" className="MainImg" />
       </div>
