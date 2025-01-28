@@ -68,7 +68,7 @@ import a6 from './HD_Brand Images/pixelcut-export (5).png'
 import a7 from './HD_Brand Images/pixelcut-export (6).png'
 import a8 from './HD_Brand Images/pixelcut-export (7).png'
 import a10 from './HD_Brand Images/pixelcut-export.png'
-import a11 from './HD_Brand Images/1732698245310-removebg-preview.png'
+import a11 from './HD_Brand Images/new logo comp.jpg'
 
 
 
@@ -149,25 +149,25 @@ const Home = ({ theme, setTheme }) => {
         <div className="group">
           <div className="card"><img src={a1} alt="Image 1" /></div>
           <div className="card"><img src={a2} alt="Image 2" /></div>
-          <div className="card"><img src={a3} alt="Image 3" /></div>
+          <div className="card"><img src={a11} alt="Image 3" /></div>
           <div className="card"><img src={a4} alt="Image 4" /></div>
           <div className="card"><img src={a5} alt="Image 5" /></div>
           <div className="card"><img src={a6} alt="Image 6" /></div>
           <div className="card"><img src={a7} alt="Image 7" /></div>
           <div className="card"><img src={a8} alt="Image 8" /></div>
-          <div className="card"><img src={a11} alt="Image 9" /></div>
+          <div className="card"><img src={a3} alt="Image 9" /></div>
           <div className="card"><img src={a10} alt="Image 10" /></div>
         </div>
         <div aria-hidden className="group">
         <div className="card"><img src={a1} alt="Image 1" /></div>
           <div className="card"><img src={a2} alt="Image 2" /></div>
-          <div className="card"><img src={a3} alt="Image 3" /></div>
+          <div className="card"><img src={a11} alt="Image 3" /></div>
           <div className="card"><img src={a4} alt="Image 4" /></div>
           <div className="card"><img src={a5} alt="Image 5" /></div>
           <div className="card"><img src={a6} alt="Image 6" /></div>
           <div className="card"><img src={a7} alt="Image 7" /></div>
           <div className="card"><img src={a8} alt="Image 8" /></div>
-          <div className="card"><img src={a11} alt="Image 9" /></div>
+          <div className="card"><img src={a3} alt="Image 9" /></div>
           <div className="card"><img src={a10} alt="Image 10" /></div>
         </div>
       </div>

@@ -5,10 +5,13 @@ import ins from '../../assets/Instagram_Bg.png';
 import link from '../../assets/Linkedin_Bg.png';
 
 const Footer = () => (
+  
   <footer className="vep-footer">
     <div className="vep-footer-center">
-      <p className="vep-tagline" style={{ fontFamily: 'poppins', fontSize: '1.8rem', textAlign: 'center', color: 'black' }}>
+    
+      <p className="vep-tagline" style={{ fontFamily: 'poppins', fontSize: '1.8rem', textAlign: 'center', color: 'black', lineHeight: '4.5rem' }}>
         Content That Accelerates Growth!
+        <br/>
       </p>
     </div>
     <div className="vep-footer-w">
@@ -46,6 +49,8 @@ const Footer = () => (
 
       <div className="Right">
         <p style={{ textAlign: 'right' }}>
+          <strong style={{ fontFamily: 'poppins', fontSize: '1.8rem', textAlign: 'center', color: 'black', lineHeight: '1.8rem' }}>Contacts</strong>
+          <br/><br/>
           <a href="mailto:sairaj@writeon.in" className="vep-footer-link">
             sairaj@writeon.in
           </a>
@@ -55,9 +60,10 @@ const Footer = () => (
         </p>
       </div>
     </div>
-    <p style={{ fontSize: '10px', fontFamily: 'poppins', textAlign: 'center', color: 'black' }}>
+    <p style={{ fontSize: '10px', fontFamily: 'poppins', textAlign: 'center', color: 'black' }}> <br/><br/>
       &copy; 2024 WriteOn. All rights reserved.
     </p>
+    <br/>
   </footer>
 );
 

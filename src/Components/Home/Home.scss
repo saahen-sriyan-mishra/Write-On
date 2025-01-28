@@ -23,16 +23,23 @@
 
     }
 
-    @media (max-width: 550px) {
+    @media (max-width: 650px) {
         .Text {
-            margin-top: 160px !important;
+            margin-top: 130px !important;
         }
     }
+
+    @media (max-width: 550px) {
+      .Text {
+          margin-top: 160px !important;
+      }
+  }
     @media (max-width: 1100px) {
       .Text {
           margin-top: 80px;
       }
   }
+
 
 
     .ContactButton {
@@ -1061,25 +1068,30 @@
 
 
 .vep-footer {
-  margin: 10px auto 20px;
+  margin: 30px auto 20px;
   display: flex;
   flex-direction: column;
-  padding: 20px 15px;
-  background-color: #bfbfbf;
+  padding: 0px px 10px;
+  background-color: #ffffff;
+  border: 5px solid #000;
 
-  max-width: 650px;
+  max-width: 600px;
+
+  //border
   }
   .vep-footer-w {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #bfbfbf;
+    padding: 0 10px 0;
+    background-color: #ffffff;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
   }
   
   .vep-social-icons {
     display: flex;
-    gap: 15px; /* Adjust the gap between social icons as needed */
+    gap: 0px; /* Adjust the gap between social icons as needed */
     flex-direction: column;
   }
   
@@ -1126,8 +1138,9 @@
 
   .typewriter-text {
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 0 10px;
+    font-weight: bold;
     text-align: center;
     font-family: poppins;
   }

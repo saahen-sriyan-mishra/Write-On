@@ -140,7 +140,7 @@ ul li {
 }
 
 /* Media query for ul flex direction column */
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   ul {
     display: flex;
     flex-direction: column;

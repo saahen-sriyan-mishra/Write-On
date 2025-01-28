@@ -15,11 +15,17 @@
           }
       }
   
-      @media (max-width: 550px) {
+      @media (max-width: 650px) {
           .Textx {
-              margin-top: 160px;
+              margin-top: 130px;
           }
       }
+
+      @media (max-width: 550px) {
+        .Textx {
+            margin-top: 160px;
+        }
+    }
   
       .ContactButtonx {
           background-color: #cb00c1;
