@@ -54,7 +54,7 @@ const Navbar = ({ theme, setTheme }) => {
   const isActive = (path) => location.pathname === path;
 
   const getLogo = () => {
-    if (windowWidth < 550) {
+    if (windowWidth < 450) {
       return theme === 'light' ? logo_dark_s : logo_light_s;
     }
     return theme === 'light' ? logo_dark : logo_light;

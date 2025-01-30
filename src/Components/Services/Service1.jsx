@@ -58,7 +58,7 @@ engaged.</p>
 
 
     <div className='WhatsIncludedSectionx'>
-  <div className="WhatsIncludedHeadingx" style={{ fontSize: '30px', marginTop: '-20px', marginBottom: '30px', textAlign:'center' }}>
+  <div className="WhatsIncludedHeadingx" style={{ fontSize: '30px', marginTop: '20px', marginBottom: '30px', textAlign:'center' }}>
       <h3 style={{fontFamily:'poppins'}}>Our Articles can help you in</h3>
     </div>
   <div className="WICardsx">

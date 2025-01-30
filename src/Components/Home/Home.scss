@@ -29,7 +29,7 @@
         }
     }
 
-    @media (max-width: 550px) {
+    @media (max-width: 450px) {
       .Text {
           margin-top: 160px !important;
       }
@@ -272,7 +272,7 @@
     width: 200px;
     height: 200px;
     
-    max-height: 250px; // Set a fixed height for all cards 
+    max-height: 200px; // Set a fixed height for all cards 
     text-align: center; // Center-align all text
     background-color: #85858566;
     &:hover {

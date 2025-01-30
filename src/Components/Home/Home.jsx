@@ -70,6 +70,13 @@ import a8 from './HD_Brand Images/pixelcut-export (7).png'
 import a10 from './HD_Brand Images/pixelcut-export.png'
 import a11 from './HD_Brand Images/new logo comp.jpg'
 
+import fa1 from './Feedback_Faces/1553775473566.jpeg';
+import fa2 from './Feedback_Faces/1696225847832.jpeg';
+import fa3 from './Feedback_Faces/1640196833156.jpeg';
+import fa4 from './Feedback_Faces/1578386491826.jpeg';
+import fa5 from './Feedback_Faces/1733227550836.jpeg';
+import fa6 from './Feedback_Faces/1727031417018.jpeg';
+
 
 
 
@@ -412,31 +419,31 @@ const Home = ({ theme, setTheme }) => {
 
 <div className="carouself">
         <div className="groupf">
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
+          <div className="cardf"><img src={fa1} alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
           <br/><p style={{textAlign:'right'}}>- CEO</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
+          <div className="cardf"><img src={fa2} alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
           <br/><p style={{textAlign:'right'}}>- Content Promotion Head</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"Outstanding Quality and Reliable Service. WriteOn has been great for our blogs. They suggest topics that fit our audience and write in a way that makes our posts interesting and shareable. They are always on time and easy to work with. "</p>
+          <div className="cardf"><img src={fa3} alt="Image 3" /><p>"Outstanding Quality and Reliable Service. WriteOn has been great for our blogs. They suggest topics that fit our audience and write in a way that makes our posts interesting and shareable. They are always on time and easy to work with. "</p>
           <br/><p style={{textAlign:'right'}}>- SEO Head</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
+          <div className="cardf"><img src={fa4} alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
           <br/><p style={{textAlign:'right'}}>- Head of Marketing</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
+          <div className="cardf"><img src={fa5} alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
           <br/><p style={{textAlign:'right'}}>- Digital Marketing Manager</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
+          <div className="cardf"><img src={fa6} alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
           <br/><p style={{textAlign:'right'}}>- Social Media Manager</p></div>
         </div>
         <div aria-hidden className="groupf">
-        <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
-        <br/><p style={{textAlign:'right'}}>- CEO</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
+        <div className="cardf"><img src={fa1} alt="Image 1" /><p>"They are simply amazing! The support I’ve received from the WriteOn founder is fantastic. It’s not just the writers; the whole founding team is involved in finding the best solutions for my needs. The support is truly excellent!"</p>
+          <br/><p style={{textAlign:'right'}}>- CEO</p></div>
+          <div className="cardf"><img src={fa2} alt="Image 2" /><p>"I stay with WriteOn because they offer a great balance of low prices, high-quality writing, and fast turnaround— delivering everything in just one day. This combination is very helpful for my company, and I plan to keep using their services."</p>
           <br/><p style={{textAlign:'right'}}>- Content Promotion Head</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 3" /><p>"Outstanding Quality and Reliable Service. WriteOn has been great for our blogs. They suggest topics that fit our audience and write in a way that makes our posts interesting and shareable. They are always on time and easy to work with. "</p>
+          <div className="cardf"><img src={fa3} alt="Image 3" /><p>"Outstanding Quality and Reliable Service. WriteOn has been great for our blogs. They suggest topics that fit our audience and write in a way that makes our posts interesting and shareable. They are always on time and easy to work with. "</p>
           <br/><p style={{textAlign:'right'}}>- SEO Head</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
+          <div className="cardf"><img src={fa4} alt="Image 4" /><p>"They don’t just write content; they create innovative and engaging posts that our customers love. I’ve seen almost a 100% increase in customer activity on our social media and blog sections, which is wonderful!"</p>
           <br/><p style={{textAlign:'right'}}>- Head of Marketing</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
+          <div className="cardf"><img src={fa5} alt="Image 5" /><p>"Beyond their service, I really appreciate their support. Whether it’s a Sunday, a holiday, or any day, the team answers calls and is always ready to help. That’s truly a special gesture."</p>
           <br/><p style={{textAlign:'right'}}>- Digital Marketing Manager</p></div>
-          <div className="cardf"><img src="https://via.placeholder.com/300x200" alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
+          <div className="cardf"><img src={fa6} alt="Image 6" /><p>"WriteOn provides exactly what we need with high efficiency and quality. The turnaround time is impressive, making our content strategy run smoothly."</p>
           <br/><p style={{textAlign:'right'}}>- Social Media Manager</p></div>
         </div>        
       </div>

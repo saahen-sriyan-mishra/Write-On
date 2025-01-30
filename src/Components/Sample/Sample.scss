@@ -34,7 +34,7 @@
     margin-right: calc(40px + 0.5 * (100vw - 800px));
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 450px) {
   .grid-container {
     margin-top: 170px;
   }
@@ -74,7 +74,7 @@ a {
 }
 
 .grid-item1 {
-  height: 250px;
+  height: 300px;
   padding: 20px;
   text-align: center;
   margin: 10px 0px;
@@ -82,7 +82,7 @@ a {
 
 .grid-item2 {
   padding: 20px;
-  height: 180px;
+  height: 250px;
   text-align: center;
   margin: 10px 0px;
 }
@@ -90,13 +90,14 @@ a {
 .grid-item3 {
   padding: 20px;
   text-align: center;
-  height: 260px;
+  height: 310px;
   margin: 10px 0px;
 }
 
 .grid-item4 {
+  display: none;
   padding: 20px;
-  height: 160px;
+  height: 10px;
   text-align: center;
   margin: 10px 0px;
 }

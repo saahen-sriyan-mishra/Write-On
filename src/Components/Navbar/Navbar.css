@@ -98,13 +98,14 @@ ul li {
 
 .service-item {
   background-color: #000000;
-  padding: 15px 30px;
+  padding: 15px 10px;
   border-radius: 5px;
   border: 3px solid black;
   text-align: center;
   width: 150px;
   color: white;
   cursor: pointer;
+  white-space: nowrap; /* Prevent line breaks */
 }
 
 .service-item:hover {

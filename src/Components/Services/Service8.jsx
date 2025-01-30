@@ -43,7 +43,7 @@ const Service8 = () => {
     <div className='ContactSectionx'>
       <div className='Textx'>
         <h1 style={{fontSize: '70px', marginBottom: '10px', fontFamily: 'poppins' }}>Social Media Content Writing</h1>
-        <br/><p style={{fontSize: '1.5rem'}}>From Scroll to Click: Content That Drives Results.</p>
+        <br/><p style={{fontSize: '1.5rem'}}>From Scroll to Click: Content That Drives Results!</p>
         <br/><p>Turn casual scrolling into real engagement with our
 eye-catching content. We create and write posts that grab attention
 and lead to clicks and conversions.</p>
@@ -57,7 +57,7 @@ and lead to clicks and conversions.</p>
 
 
     <div className='WhatsIncludedSectionx'>
-  <div className="WhatsIncludedHeadingx" style={{ fontSize: '30px', marginTop: '-20px', marginBottom: '30px', textAlign:'center' }}>
+  <div className="WhatsIncludedHeadingx" style={{ fontSize: '30px', marginTop: '20px', marginBottom: '30px', textAlign:'center' }}>
       <h3 style={{fontFamily:'poppins'}}>We can help you in</h3>
     </div>
   <div className="WICardsx">

@@ -42,7 +42,7 @@ const Service7 = () => {
     <div className='Service'>
     <div className='ContactSectionx'>
       <div className='Textx'>
-        <h1 style={{fontSize: '70px', marginBottom: '10px', fontFamily: 'poppins' }}>Website Content Writing</h1>
+        <h1 style={{fontSize: '60px', marginBottom: '10px', fontFamily: 'poppins' }}>Website Content Writing</h1>
         <br/><p style={{fontSize: '1.5rem'}}>We Turn User Journeys into Stories Everyone Wants to Read. </p>
         <br/><p>Our skilled website content writers create engaging
         content that fits perfectly with your site’s style and voice.</p>
@@ -56,7 +56,7 @@ const Service7 = () => {
 
 
     <div className='WhatsIncludedSectionx'>
-  <div className="WhatsIncludedHeadingx" style={{ fontSize: '30px', marginTop: '-20px', marginBottom: '30px', textAlign:'center' }}>
+  <div className="WhatsIncludedHeadingx" style={{ fontSize: '30px', marginTop: '20px', marginBottom: '30px', textAlign:'center' }}>
       <h3 style={{fontFamily:'poppins'}}>We help you in</h3>
     </div>
   <div className="WICardsx">
