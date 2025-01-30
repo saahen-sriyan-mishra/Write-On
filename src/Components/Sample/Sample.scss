@@ -62,6 +62,7 @@ a {
 .grid-item6,
 .grid-item7,
 .grid-item8 {
+  border-radius: 20px;
   min-width: 200px;
   max-width: 500px;
   //background-color: #ffc400;
@@ -193,6 +194,11 @@ a {
   z-index: 1; // Place text above the image
   font-size: 30px;
   font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: block;
+  background-color: yellow;
+  padding: 2px 12px 5px;
+  border-radius: 20px;
+  text-decoration:wavy;
   text-align: center; // Center the text horizontally
 }
