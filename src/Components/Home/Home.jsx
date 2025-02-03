@@ -189,16 +189,16 @@ const Home = ({ theme, setTheme }) => {
   <div className="WICards">
     <div className="Card">
       <h2 style={{fontFamily:'poppins'}}>No Quality Compromise</h2>
-      <p style = {{marginTop: '10px'}}>Always maintaining top standards.
+      <p style = {{marginTop: '10px'}}><br/>Always maintaining top standards.
       </p>
     </div>
     <div className="Card">
       <h2 style={{fontFamily:'poppins'}}>Feature Images</h2>
-      <p style = {{marginTop: '10px'}}>Feature images are key visuals that represent content.</p>
+      <p style = {{marginTop: '10px'}}><br/>Feature images are key visuals that represent content.</p>
     </div>
     <div className="Card">
-      <h2 style={{fontFamily:'poppins'}}>No AI contents</h2>
-      <p style = {{marginTop: '10px'}}> No AI contents means only human-written content is allowed.
+      <h2 style={{fontFamily:'poppins'}}>No use of AI contents</h2>
+      <p style = {{marginTop: '10px'}}><br/> No AI contents means only human-written content is allowed.
       </p>
     </div>
   </div>
