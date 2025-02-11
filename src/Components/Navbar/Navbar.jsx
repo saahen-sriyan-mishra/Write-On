@@ -70,14 +70,14 @@ const Navbar = ({ theme, setTheme }) => {
         <li
           onClick={toggleServices}
           className={
-            isActive('/service1') ||
-            isActive('/service2') ||
-            isActive('/service3') ||
-            isActive('/service4') ||
-            isActive('/service5') ||
-            isActive('/service6') ||
-            isActive('/service7') ||
-            isActive('/service8')
+            isActive('/article') ||
+            isActive('/blog') ||
+            isActive('/casestudy') ||
+            isActive('/newsletter') ||
+            isActive('/copywriting') ||
+            isActive('/emailers') ||
+            isActive('/website-content') ||
+            isActive('/social-media')
               ? 'active'
               : ''
           }
@@ -94,14 +94,14 @@ const Navbar = ({ theme, setTheme }) => {
       {isServicesVisible && (
         <div className={`services-box ${theme === 'light' ? 'light' : 'dark'}`}>
           <div className="services-grid">
-            <Link to="/service1" className={`service-item ${theme}`}>Article</Link>
-            <Link to="/service2" className={`service-item ${theme}`}>Blog</Link>
-            <Link to="/service3" className={`service-item ${theme}`}>Casestudy</Link>
-            <Link to="/service4" className={`service-item ${theme}`}>Newsletter</Link>
-            <Link to="/service5" className={`service-item ${theme}`}>Copywriting</Link>
-            <Link to="/service6" className={`service-item ${theme}`}>Emailers</Link>
-            <Link to="/service7" className={`service-item ${theme}`}>Website Content</Link>
-            <Link to="/service8" className={`service-item ${theme}`}>Social Media</Link>
+            <Link to="/article" className={`service-item ${theme}`}>Article</Link>
+            <Link to="/blog" className={`service-item ${theme}`}>Blog</Link>
+            <Link to="/casestudy" className={`service-item ${theme}`}>Casestudy</Link>
+            <Link to="/newsletter" className={`service-item ${theme}`}>Newsletter</Link>
+            <Link to="/copywriting" className={`service-item ${theme}`}>Copywriting</Link>
+            <Link to="/emailers" className={`service-item ${theme}`}>Emailers</Link>
+            <Link to="/website-content" className={`service-item ${theme}`}>Website Content</Link>
+            <Link to="/social-media" className={`service-item ${theme}`}>Social Media</Link>
           </div>
         </div>
       )}

@@ -28,14 +28,27 @@ const App = () => {
         <Route path="/" element={<Home theme={theme} setTheme={setTheme} />} />
         
           <Route path="/sample" element={<Sample />} />
-          <Route path="/service1" element={<Service1 />} />
-          <Route path="/service2" element={<Service2 />} />
-          <Route path="/service3" element={<Service3 />} />
-          <Route path="/service4" element={<Service4 />} />
-          <Route path="/service5" element={<Service5 />} />
-          <Route path="/service6" element={<Service6 />} />
-          <Route path="/service7" element={<Service7 />} />
-          <Route path="/service8" element={<Service8 />} />
+          
+          
+          {/* Friendly URLs redirecting to actual service paths */}
+  <Route path="/article" element={<Service1 />} />
+  <Route path="/blog" element={<Service2 />} />
+  <Route path="/casestudy" element={<Service3 />} />
+  <Route path="/newsletter" element={<Service4 />} />
+  <Route path="/copywriting" element={<Service5 />} />
+  <Route path="/emailers" element={<Service6 />} />
+  <Route path="/website-content" element={<Service7 />} />
+  <Route path="/social-media" element={<Service8 />} />
+  
+  {/* Actual service paths */}
+  <Route path="/service1" element={<Service1 />} />
+  <Route path="/service2" element={<Service2 />} />
+  <Route path="/service3" element={<Service3 />} />
+  <Route path="/service4" element={<Service4 />} />
+  <Route path="/service5" element={<Service5 />} />
+  <Route path="/service6" element={<Service6 />} />
+  <Route path="/service7" element={<Service7 />} />
+  <Route path="/service8" element={<Service8 />} />
         </Routes>
       </div>
     </Router>
